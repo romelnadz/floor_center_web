@@ -1,0 +1,318 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: work-bold;
+  src: url('../fonts/worksans/WorkSans-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: work-med;
+  src: url('../fonts/worksans/WorkSans-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: work;
+  src: url('../fonts/worksans/WorkSans-Regular.ttf'); 
+}
+
+
+/*---------------------------------------------*/
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------BANNER-----------------------------------*/
+/*--------------------------------BANNER-----------------------------------*/
+/*--------------------------------BANNER-----------------------------------*/
+.banner_min
+{
+		background-image: url('../src/banner_minimal_mobile.svg');
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: 100%;
+    background-position: center;
+    height: 100vw;
+    width: 100%;
+    background-color: red;
+    margin: 0;
+}
+
+/*quote tablet*/
+@media (min-width: 480px)
+{
+	.banner_min
+	{
+		background-image: url('../src/banner_minimal.svg');
+		background-repeat: no-repeat;
+		background-attachment: contain;
+		background-size: 100%;
+		background-position: center;
+		height: 36vw;
+		width: 100%;
+		background-color: red;
+		margin: 0;
+
+	}
+}
+
+@media (min-width: 768px)
+{
+	.banner_min
+	{
+		background: url('../src/banner_minimal.svg') center/100% no-repeat contain;
+		background-repeat: no-repeat;
+		background-attachment: contain;
+		background-size: 100%;
+		background-position: center;
+		height: 36vw;
+		background-color: red;
+		margin: 0;'
+		overflow-x: hidden;
+	}
+}
+
+/*@media (min-width: 2000px)
+{
+	.banner_min
+	{
+		background-image: url('../src/banner_minimal.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		height: 18vw;
+		background-color: #DEDEDE;
+		margin: 0vw 25vw;
+	}
+}*/
+
+/*---------------------------BANNER END-----------------------------------*/
+/*---------------------------BANNER END-----------------------------------*/
+/*---------------------------BANNER END-----------------------------------*/
+
+
+
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+
+.banner_text
+{
+	
+	background-image: url('../src/banner_text.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin: 6vw 0vw 0vw 6vw; 
+	height: 13vw;
+	width: 80%;
+}
+.banner_btn
+{
+	background-image: url('../src/banner_btn.svg');
+	background-repeat: no-repeat;
+	float: left;
+	background-size: 100%;
+	background-position: center;
+	margin: 0vw 0vw 0vw 4vw; 
+	height: 10vw;
+	width: 50%;
+	
+}
+.banner_btn:hover
+{
+	background-image: url('../src/banner_btn_hover.svg');
+	background-repeat: no-repeat;
+	float: left;
+	background-size: 100%;
+	background-position: center;
+	margin: 0vw 0vw 0vw 4vw; 
+	height: 10vw;
+	width: 50%;
+	
+}
+
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+/*-----------------------BANNER TEXT AND BUTTON---------------------------*/
+
+
+
+
+
+
+/*-------------------------3D POPUP HOVER---------------------------------*/
+/*-------------------------3D POPUP HOVER---------------------------------*/
+/*-------------------------3D POPUP HOVER---------------------------------*/
+.banner_row
+{
+	/*height: 100vw;*/
+	/*width: 100vw;*/
+	margin: 0;
+	padding: 0;
+	/*border: solid 1px #ccc;*/
+	/*opacity: .5;*/
+
+}
+@media (min-width: 480px)
+{
+	.banner_row
+	{
+		height: 36vw;
+		/*width: 100vw;*/
+		/*border: solid 1px #ccc;*/
+		/*opacity: .5;*/
+		margin: 0;
+		padding: 0;
+
+	}
+}
+
+.iso_row
+{
+	height: 18vw;
+	/*border: solid 1px #ccc;*/
+	margin: 0;
+	padding: 0;
+
+}
+.iso_col
+{
+	height: 18vw;
+	margin: 0;
+	padding: 0;
+	/*border: solid 1px #ccc;*/
+
+}
+
+.hotspot
+{
+	background-image: url(../src/hotspot.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 3vw;
+	height: 3vw;
+	width: 3vw;
+	float: right;
+	margin: 8vw 0vw 0vw 0vw;
+	transition: 0.3s;
+}
+
+.hotspot:hover + .hotspot_price 
+{
+	display: block;
+
+}
+
+.hotspot_price
+{
+	display: none;
+	background-image: url(../src/hotspot_price.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100%;
+	height: 10vw;
+	/*width: 8vw;*/
+	/*float: right;*/
+	margin: 0vw 1vw 0vw 0vw;
+
+}
+.hotspot_price:hover
+{
+	display: block;
+	background-image: url(../src/hotspot_price.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100%;
+	height: 10vw;
+	/*width: 8vw;*/
+	/*float: right;*/
+	margin: 0vw 1vw 0vw 0vw;
+
+}
+
+/*----------------------------3D POPUP HOVER END-----------------------------*/
+/*----------------------------3D POPUP HOVER END-----------------------------*/
+/*----------------------------3D POPUP HOVER END-----------------------------*/
+
+
+
+
+/*----------------------------QUOTE SECTION----------------------------------*/
+/*----------------------------QUOTE SECTION----------------------------------*/
+/*quote mobile*/
+.quote
+{
+  background-image: url('../images/quote.png');
+  background-repeat: no-repeat;
+  background-attachment: contain;
+  background-size: 100%;
+  height: 8.3vw;
+}
+
+
+/*quote tablet*/
+@media (min-width: 400px)
+{
+
+}
+/* desktop*/
+@media (min-width: 768px)
+{
+
+  .quote
+  {
+    background-image: url('../images/quote.png');
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: 100%;
+    margin: 2vh 5vw 2vh 5vw;
+    height: 8.3vw;
+
+  }
+
+
+}
+/* desktop*/
+@media (min-width: 2560px)
+{
+
+  .quote
+  {
+    background-image: url('../images/quote.png');
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: 100%;
+    margin: 2vh 16.5vw 2vh 16.5vw;
+    height: 6vw;
+ 		
+  }
+
+
+}
+
+/*----------------------------QUOTE SECTION----------------------------------*/
+/*----------------------------QUOTE SECTION----------------------------------*/
+/*----------------------------QUOTE SECTION----------------------------------*/
+
+
+
+

@@ -1,0 +1,254 @@
+/*
+	BACKGROUND SHORTHAND
+
+	
+	background: url('../src/file.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+
+
+	FONT SHORTHAND
+	
+	font-style------font-variant-----font-weight----font-size/line-height-----font-family
+
+	font: 5vw/5vw 'work-bold';
+	color: #000;
+*/
+
+
+/*-----------------MOBILE VIEW--------------------*/
+/*-----------------MOBILE VIEW--------------------*/
+/*-----------------MOBILE VIEW--------------------*/
+.idea_main
+{
+	float:left;
+	width: 100%;
+	height:350vw;
+
+}
+.idea_m_l
+{
+	float:left;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	width: 5%;
+	height:350vw;
+}
+.idea_container
+{
+	float: left;
+	/*background-color: red;*/
+	height: 350vw; 
+	width: 90%;
+}
+.idea_m_r
+{
+	float:right;
+	width: 5%;
+	height:350vw;
+}
+.idea_card
+{
+	float: left;
+	/*background-color: red;*/
+	height: 95vw; 
+	width: 100%;
+}
+.idea_title
+{
+	float: left;
+	background: url('../src/idea_title.svg') center/100% no-repeat;
+	height: 20vw; 
+	width: 100%;
+
+}
+
+.idea_img1
+{
+	float: left;
+	background: url('../src/idea_img1.svg') center/100% no-repeat;
+	height: 75vw; 
+	width: 100%;
+
+}
+.idea_img2
+{
+	float: left;
+	background: url('../src/idea_img2.svg') center/100% no-repeat;
+	height: 125vw; 
+	width: 100%;
+
+}
+.idea_img3
+{
+	float: left;
+	background: url('../src/idea_img3.svg') center/100% no-repeat;
+	height: 120vw; 
+	width: 100%;
+
+}
+
+/*-----------------MOBILE VIEW--------------------*/
+/*-----------------MOBILE VIEW--------------------*/
+/*-----------------MOBILE VIEW--------------------*/
+
+
+
+/*-----------------DESKTOP VIEW--------------------*/
+/*-----------------DESKTOP VIEW--------------------*/
+/*-----------------DESKTOP VIEW--------------------*/
+
+
+@media (min-width: 400px)
+{
+.idea_main
+{
+	float:left;
+	width: 100%;
+	height:40vw;
+
+}
+.idea_m_l
+{
+	float:left;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	width: 6%;
+	height:40vw;
+}
+.idea_container
+{
+	float: left;
+	/*background-color: red;*/
+	height: 40vw; 
+	width: 86%;
+}
+.idea_m_r
+{
+	float:right;
+	width: 6%;
+	height:40vw;
+}
+.idea_card
+{
+	float: left;
+	/*background-color: red;*/
+	height: 35vw; 
+	width: 40%;
+
+}
+.idea_title
+{
+	float: left;
+	background: url('../src/idea_title.svg') bottom/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+	margin: 0vw 0vw 0vw 1vw;
+
+}
+
+.idea_img1
+{
+	float: left;
+	background: url('../src/idea_img1.svg') bottom/95% no-repeat;
+	height: 25vw; 
+	width: 100%;
+
+}
+.idea_img2
+{
+	float: left;
+	background: url('../src/idea_img2.svg') bottom/95% no-repeat;
+	height: 35vw; 
+	width: 29.5%;
+
+}
+.idea_img3
+{
+	float: right;
+	background: url('../src/idea_img3.svg') bottom/95% no-repeat;
+	height: 35vw; 
+	width: 30.5%;
+
+}
+}
+
+
+/*-----------------DESKTOP VIEW--------------------*/
+/*-----------------DESKTOP VIEW--------------------*/
+/*-----------------DESKTOP VIEW--------------------*/
+
+
+@media only screen and (min-width: 1400px)
+{
+	.idea_main
+	{
+		float:left;
+		width: 100%;
+		height:25vw;
+
+	}
+	.idea_m_l
+	{
+		float:left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		width: 20%;
+		height:25vw;
+	}
+	.idea_container
+	{
+		float: left;
+		/*background-color: red;*/
+		height: 25vw; 
+		width: 60%;
+	}
+	.idea_m_r
+	{
+		float:right;
+		width: 20%;
+		height:25vw;
+	}
+	.idea_card
+	{
+		float: left;
+		/*background-color: red;*/
+		height: 22vw; 
+		width: 40%;
+
+	}
+	.idea_title
+	{
+		float: left;
+		background: url('../src/idea_title.svg') bottom/100% no-repeat;
+		height: 6vw; 
+		width: 100%;
+		margin: 0vw 0vw 0vw 1vw;
+
+	}
+
+	.idea_img1
+	{
+		float: left;
+		background: url('../src/idea_img1.svg') bottom/95% no-repeat;
+		height: 16vw; 
+		width: 100%;
+
+	}
+	.idea_img2
+	{
+		float: left;
+		background: url('../src/idea_img2.svg') bottom/95% no-repeat;
+		height: 22vw; 
+		width: 29.5%;
+
+	}
+	.idea_img3
+	{
+		float: right;
+		background: url('../src/idea_img3.svg') bottom/95% no-repeat;
+		height: 22vw; 
+		width: 30.5%;
+
+	}
+}

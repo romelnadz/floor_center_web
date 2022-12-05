@@ -1,0 +1,16 @@
+.spacer
+	{
+		height: 10vw; 
+		width: 100%; 
+		float: left;
+	}
+
+@media (min-width: 400px)
+{
+	.spacer
+	{
+		height: 2vw; 
+		width: 100%; 
+		float: left;
+	}
+}

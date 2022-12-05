@@ -1,0 +1,441 @@
+/*
+	BACKGROUND SHORTHAND
+
+	
+	background: url('../src/file.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+
+
+	FONT SHORTHAND
+	
+	font-style------font-variant-----font-weight----font-size/line-height-----font-family
+
+	font: 5vw/5vw 'work-bold';
+	color: #000;
+
+
+	CENTER TEXT
+
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+
+
+*/
+
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+
+/*-----------mobile view-----------*/
+/*-----------mobile view-----------*/
+/*-----------mobile view-----------*/
+.feature_container
+{
+	float: left;
+	height: 110vw;
+	width: 100%;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*MARGIN LEFT*/
+.feature_m_l
+{
+
+	float:left;
+	width: 5%;
+	height:110vw;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*CENTER DIV*/
+.feature_center
+{
+	float:left;
+	width: 90%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:120vw;
+}
+/*MARGIN RIGHT*/
+.feature_m_r
+{
+
+	float:right;
+	width: 5%;
+	height:110vw;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*---------- DESIGN BTN RIGHT-----------*/
+.feature_txt_btn
+{
+	float:left;
+	width: 100%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+	
+}
+.feature_txt
+{
+	float:left;
+	width: 60%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+	display: table;
+}
+.feature_txt a
+{
+	font: 5vw/5vw 'work-bold';
+	color: #000;
+	display: table-cell;
+	vertical-align: middle;
+	/*text-align: center;*/
+
+}
+.feature_btn
+{
+	float:right;
+	width: 40%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+}
+.feature_btn_img
+{
+	background: url('../src/feature_btn.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+}
+.feature_btn_img:hover
+{
+	background: url('../src/feature_btn_hover.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+}
+
+
+/*---------- DESIGN BTN RIGHT END-----------*/
+
+
+/*---------- DESIGN BTN CARDS-----------*/
+
+.feature_card_row
+{
+	float:left;
+	width: 100%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:100vw;
+	
+	padding: 0;
+}
+.feature_card
+{
+	float:left;
+	width: 50%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:50vw;
+	
+	padding: 0;
+}
+.feature_card_img1
+{
+	background: url('../src/feature_card_img1.svg') center/80% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.feature_card_img2
+{
+	background: url('../src/feature_card_img2.svg') center/80% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.feature_card_img3
+{
+	background: url('../src/feature_card_img3.svg') center/80% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.feature_card_img4
+{
+	background: url('../src/feature_card_img4.svg') center/80% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+/*---------- DESIGN BTN CARDS END-----------*/
+
+/*-----------mobile view end-----------*/
+/*-----------mobile view end-----------*/
+/*-----------mobile view end-----------*/
+
+
+
+/*-------------------tablet devices and up----------------------*/
+/*-------------------tablet devices and up----------------------*/
+/*-------------------tablet devices and up----------------------*/
+
+
+@media (min-width: 480px)
+{
+	.feature_container
+	{
+		float: left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height: 30vw;
+		width: 100%
+
+	}
+	/*M RIGHT*/
+	.feature_m_l
+	{
+		float:left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		width: 5%;
+		height:30vw;
+	}
+	/*CENTER */
+	.feature_center
+	{
+		float:left;
+		width: 90%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:30vw;
+	}
+	/*M  LEFT*/
+	.feature_m_r
+	{
+		display: block;
+		float:right;
+		width: 5%;
+		height:30vw;
+	}
+
+	/*TEXT AND BTN*/
+	.feature_txt_btn
+	{
+		float:left;
+		width: 100%; 
+		height:5vw;
+		
+	}
+
+	.feature_txt
+	{
+		float:left;
+		width: 70%; 
+		height:5vw;
+	}
+	.feature_btn
+	{
+		float:right;
+		width: 30%; 
+		height:5vw;
+	}
+	.feature_txt
+	{
+		float:left;
+		width: 75%; 
+		height:5vw;
+		display: table;
+	}
+	.feature_txt a
+	{
+		font: 2vw/2vw 'work-bold';
+		color: #000;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		/*text-align: center;*/
+
+	}
+	.feature_btn
+	{
+		float:right;
+		width: 25%; 
+		height:5vw;
+
+	}
+	.feature_btn_img
+	{
+		background: url('../src/feature_btn.svg') center/80% no-repeat;
+		height: 5vw;
+		max-height: 5vw;
+		width: 100%;
+		float: right;
+		/*border: dashed 1px lightblue;*/
+
+	}
+	.feature_btn_img:hover
+	{
+		background: url('../src/feature_btn_hover.svg') center/80% no-repeat;
+		height: 5vw; 
+		width: 100%;
+		float: right;
+	}
+
+	/*DESIGN CARDS*/
+	.feature_card_row
+	{
+		float:left;
+		width: 100%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:25vw;
+		
+		padding: 0;
+	}
+	.feature_card
+	{
+		float:left;
+		width: 25%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border: dashed 1px lightblue;*/
+		height:25vw;
+		padding: 0;
+	/*DESIGN CARDS END*/
+	}
+
+}
+
+
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+
+
+@media only screen and (min-width: 1400px)
+{
+	.feature_container
+	{
+		float: left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height: 30vw;
+		width: 100%
+
+	}
+	/*M RIGHT*/
+	.feature_m_l
+	{
+		float:left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		width: 20%;
+		height:30vw;
+	}
+	/*CENTER */
+	.feature_center
+	{
+		float:left;
+		width: 60%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:30vw;
+	}
+	/*M  LEFT*/
+	.feature_m_r
+	{
+		display: block;
+		float:right;
+		width: 20%;
+		height:30vw;
+	}
+
+	/*TEXT AND BTN*/
+	.feature_txt_btn
+	{
+		float:left;
+		width: 100%; 
+		height:5vw;
+		
+	}
+
+	.feature_txt
+	{
+		float:left;
+		width: 70%; 
+		height:5vw;
+	}
+	.feature_btn
+	{
+		float:right;
+		width: 30%; 
+		height:5vw;
+	}
+	.feature_txt
+	{
+		float:left;
+		width: 75%; 
+		height:5vw;
+		display: table;
+	}
+	.feature_txt a
+	{
+		font: 1.5vw/1.5vw 'work-bold';
+		color: #454545;
+		display: table-cell;
+		vertical-align: middle;
+		/*text-align: center;*/
+
+	}
+	.feature_btn
+	{
+		float:right;
+		width: 25%; 
+		height:5vw;
+
+	}
+	.feature_btn_img
+	{
+		background: url('../src/feature_btn.svg') center/80% no-repeat;
+		height: 5vw;
+		max-height: 5vw;
+		width: 100%;
+		float: right;
+		/*border: dashed 1px lightblue;*/
+
+	}
+	.feature_btn_img:hover
+	{
+		background: url('../src/feature_btn_hover.svg') center/80% no-repeat;
+		height: 5vw; 
+		width: 100%;
+		float: right;
+	}
+
+	/*DESIGN CARDS*/
+	.feature_card_row
+	{
+		float:left;
+		width: 100%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:25vw;
+		
+		padding: 0;
+	}
+	.feature_card
+	{
+		float:left;
+		width: 25%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border: dashed 1px lightblue;*/
+		height:25vw;
+		padding: 0;
+	/*DESIGN CARDS END*/
+	}
+}

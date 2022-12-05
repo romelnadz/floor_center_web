@@ -1,0 +1,379 @@
+/*
+	BACKGROUND SHORTHAND
+
+
+
+
+
+	FONT SHORTHAND
+	
+	font-style------font-variant-----font-weight----font-size/line-height-----font-family
+
+	font: 5vw/5vw 'work-bold';
+	color: #000;
+
+
+	CENTER TEXT
+
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+
+
+*/
+
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+
+/*-----------mobile view-----------*/
+/*-----------mobile view-----------*/
+/*-----------mobile view-----------*/
+.tile_design_container
+{
+	float: left;
+	height: 110vw;
+	width: 100%;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*MARGIN LEFT*/
+.design_m_l
+{
+
+	float:left;
+	width: 5%;
+	height:110vw;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*CENTER DIV*/
+.tile_design_center
+{
+	float:left;
+	width: 90%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:120vw;
+}
+/*MARGIN RIGHT*/
+.design_m_r
+{
+
+	float:right;
+	width: 5%;
+	height:110vw;
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+}
+/*---------- DESIGN BTN RIGHT-----------*/
+.design_txt_btn
+{
+	float:left;
+	width: 100%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+	
+}
+.design_txt
+{
+	float:left;
+	width: 60%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+	display: table;
+}
+.design_txt a
+{
+	font: 5vw/5vw 'work-bold';
+	color: #000;
+	display: table-cell;
+	vertical-align: middle;
+	/*text-align: center;*/
+
+}
+.design_btn
+{
+	float:right;
+	width: 40%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:10vw;
+}
+.design_btn_img
+{
+	background: url('../src/design_btn.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+}
+.design_btn_img:hover
+{
+	background: url('../src/design_btn_hover.svg') center/100% no-repeat;
+	height: 10vw; 
+	width: 100%;
+}
+
+
+/*---------- DESIGN BTN RIGHT END-----------*/
+
+
+/*---------- DESIGN BTN CARDS-----------*/
+
+.design_card_row
+{
+	float:left;
+	width: 100%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:80vw;
+	
+	padding: 0;
+}
+.design_card
+{
+	float:left;
+	width: 50%; 
+	/*border-left:  solid 1px lightpink;*/
+	/*border-top: dashed 1px lightblue;*/
+	height:50vw;
+	
+	padding: 0;
+}
+.design_card_img1
+{
+	background: url('../src/design_card_img1.svg') center/70% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.design_card_img2
+{
+	background: url('../src/design_card_img2.svg') center/70% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.design_card_img3
+{
+	background: url('../src/design_card_img3.svg') center/70% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.design_card_img4
+{
+	background: url('../src/design_card_img4.svg') center/70% no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+/*---------- DESIGN BTN CARDS END-----------*/
+
+/*-----------mobile view end-----------*/
+/*-----------mobile view end-----------*/
+/*-----------mobile view end-----------*/
+
+
+
+/*-------------------tablet devices and up----------------------*/
+/*-------------------tablet devices and up----------------------*/
+/*-------------------tablet devices and up----------------------*/
+
+
+@media (min-width: 480px)
+{
+	.tile_design_container
+	{
+		float: left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height: 30vw;
+		width: 100%
+
+	}
+	/*M RIGHT*/
+	.design_m_l
+	{
+		float:left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		width: 5%;
+		height:30vw;
+	}
+	/*CENTER */
+	.tile_design_center
+	{
+		float:left;
+		width: 90%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:30vw;
+	}
+	/*M  LEFT*/
+	.design_m_r
+	{
+		display: block;
+		float:right;
+		width: 5%;
+		height:30vw;
+	}
+
+	/*TEXT AND BTN*/
+	.design_txt_btn
+	{
+		float:left;
+		width: 100%; 
+		height:5vw;
+		
+	}
+
+	.design_txt
+	{
+		float:left;
+		width: 70%; 
+		height:5vw;
+	}
+	.design_btn
+	{
+		float:right;
+		width: 30%; 
+		height:5vw;
+	}
+	.design_txt
+	{
+		float:left;
+		width: 75%; 
+		height:5vw;
+		display: table;
+	}
+	.design_txt a
+	{
+		font: 2vw/2vw 'work-bold';
+		color: #000;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+
+		/*text-align: center;*/
+
+	}
+	.design_btn
+	{
+		float:right;
+		width: 25%; 
+		height:5vw;
+
+	}
+	.design_btn_img
+	{
+		background: url('../src/design_btn.svg') center/80% no-repeat;
+		height: 5vw;
+		max-height: 5vw;
+		width: 100%;
+		float: right;
+		/*border: dashed 1px lightblue;*/
+
+	}
+	.design_btn_img:hover
+	{
+		background: url('../src/design_btn_hover.svg') center/80% no-repeat;
+		height: 5vw; 
+		width: 100%;
+		float: right;
+	}
+
+	/*DESIGN CARDS*/
+	.design_card_row
+	{
+		float:left;
+		width: 100%; 
+		height:25vw;
+		
+		padding: 0;
+	}
+	.design_card
+	{
+		float:left;
+		width: 25%; 
+		height:25vw;
+		padding: 0;
+}
+
+
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+/*------------------------------TILE DESIGN----------------------------------*/
+
+
+@media only screen and (min-width: 1400px)
+{
+	.tile_design_container
+	{
+		float: left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height: 20vw;
+		width: 100%
+
+	}
+	/*M RIGHT*/
+	.design_m_l
+	{
+		float:left;
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		width: 20%;
+		height:20vw;
+	}
+	/*CENTER */
+	.tile_design_center
+	{
+		float:left;
+		width: 60%; 
+		/*border-left:  solid 1px lightpink;*/
+		/*border-top: dashed 1px lightblue;*/
+		height:20vw;
+	}
+	/*M  LEFT*/
+	.design_m_r
+	{
+		display: block;
+		float:right;
+		width: 20%;
+		height:20vw;
+	}
+	.design_txt a
+	{
+		font: 1.5vw/1.5vw 'work-bold';
+		color: #454545;
+		display: table-cell;
+		vertical-align: middle;
+		/*text-align: center;*/
+
+
+	}
+
+	.design_card
+	{
+		float:left;
+		width: 25%; 
+		height:15vw;
+		padding: 0;
+	}
+
+	.design_card_row
+	{
+		float:left;
+		width: 100%; 
+		height:15vw;
+		
+		padding: 0;
+	}
+
+
+}
+
