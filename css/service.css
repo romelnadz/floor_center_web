@@ -16,7 +16,7 @@
 .service_img
 {
 	float:left;
-	background: url('../src/service_mobile.svg') bottom/100% no-repeat;
+	background: url('../src/service_mobile.png') bottom/100% no-repeat;
 	height: 110vw; 
 	width: 90%;
 
@@ -30,7 +30,7 @@
 
 
 
-@media (min-width: 400px)
+@media (min-width: 480px)
 {
 .service_container
 {
@@ -50,7 +50,7 @@
 .service_img
 {
 	float:left;
-	background: url('../src/service.svg') bottom/100% no-repeat;
+	background: url('../src/service.png') bottom/100% no-repeat;
 	height: 27vw; 
 	width: 84%;
 
@@ -86,7 +86,7 @@
 	.service_img
 	{
 		float:left;
-		background: url('../src/service.svg') bottom/100% no-repeat;
+		background: url('../src/service.png') bottom/100% no-repeat;
 		height: 18vw; 
 		width: 60%;
 
