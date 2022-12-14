@@ -1,0 +1,274 @@
+.virtual_container
+{
+	
+	float: left;
+	width: 100%;
+	height:130vw;
+	margin: 10vw 0vw 10vw 0vw;
+
+}
+.virtual_m_l
+{
+	float:left;
+	width: 5%;
+	height:130vw;
+
+}
+.virtual_center
+{
+	float: left;
+	width: 90%;
+	height:130vw;
+}
+.virtual_img
+{
+	float:left;
+	/*background: url('../src/service_mobile.png') bottom/100% no-repeat;*/
+	height: 80vw; 
+	width: 100%;
+
+}
+.virtual_txt
+{
+	float:right;
+	/*background: url('../src/virtual.png') bottom/100% no-repeat;*/
+	height: 50vw; 
+	width: 100%;
+}
+
+.virtual_360
+{
+	float: left;
+	height: 100%;
+	width: 100%;
+
+}
+.virtual_m_r
+{
+	float:right;
+	width: 5%;
+	height:130vw;
+}
+
+
+
+@media (min-width: 480px)
+{
+	.virtual_container
+	{
+		
+		float: left;
+		width: 100%;
+		height:27vw;
+		margin: 5vw 0vw 5vw 0vw;
+
+	}
+	.virtual_m_l
+	{
+		float:left;
+		width: 7%;
+		height:27vw;
+
+	}
+	.virtual_center
+	{
+		float: left;
+		width: 88%;
+		height:27vw;
+	}
+	.virtual_img
+	{
+		float:left;
+		/*background: url('../src/service.png') bottom/100% no-repeat;*/
+		height: 27vw; 
+		width: 50%;
+
+	}
+
+	.virtual_txt
+	{
+		float:right;
+		/*background: url('../src/virtual.png') bottom/100% no-repeat;*/
+		height: 27vw; 
+		width: 50%;
+	}
+
+	.virtual_m_r
+	{
+		float:right;
+		width: 7%;
+		height:27vw;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 1400px)
+{
+	.virtual_container
+	{
+		
+		margin: 1vw 0vw 5vw 0vw;
+		float: left;
+		width: 100%;
+		height:20vw;
+
+	}
+	.virtual_container2
+	{
+		
+		float: left;
+		width: 100%;
+		height:3vw;
+
+	}
+	.virtual_m_l
+	{
+		float:left;
+		width: 20%;
+		height:20vw;
+
+	}
+	.virtual_center
+	{
+		float: left;
+		width: 60%;
+		height:20vw;
+	}
+	.virtual_img
+	{
+		float:left;
+		/*background: url('../src/virtual.png') bottom/100% no-repeat;*/
+		height: 20vw; 
+		width: 50%;
+
+	}
+	.virtual_txt
+	{
+		float:right;
+		/*background: url('../src/virtual.png') bottom/100% no-repeat;*/
+		height: 20vw; 
+		width: 50%;
+
+	}
+	.virtual_m_r
+	{
+		float:right;
+		width: 20%;
+		height:20vw;
+	}
+}
+
+
+
+/*---------TEXT TITLE------------*/
+/*---------TEXT TITLE------------*/
+/*---------TEXT TITLE------------*/
+/*------------SMALL--------------*/
+.virtual_text_header
+{
+	font: 6vw/6vw 'work-bold';
+	color: #393939;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 100%;
+	float: left;
+	margin: 0vw 0vw 0vw 0vw;
+}
+.virtual_text_sub
+{
+	font: 5vw/5vw 'work-med';
+	color: #393939;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 100%;
+	float: left;
+	margin: 2vw 0vw 0vw 0vw;
+}
+.virtual_text_info
+{
+	font: 4vw/4vw 'work';
+	color: #393939;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 100%;
+	float: left;
+	margin: 4vw 0vw 0vw 0vw;
+}
+
+/*------------MEDIUM-------------*/
+@media only screen and (min-width: 480px)
+{
+	.virtual_text_header
+	{
+		font: 2.8vw/2.8vw 'work-bold';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+	}
+	.virtual_text_sub
+	{
+		font: 2vw/2vw 'work-med';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+		margin: 1vw 0vw 0vw 0vw;
+	}
+	.virtual_text_info
+	{
+		font: 2vw/2vw 'work';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+		margin: 1vw 0vw 0vw 0vw;
+	}
+}
+
+@media only screen and (min-width: 1440px)
+{
+	.virtual_text_header
+	{
+		font: 2vw/2vw 'work-bold';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+	}
+	.virtual_text_sub
+	{
+		font: 1.5vw/1.5vw 'work-med';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+		margin: 1vw 0vw 0vw 0vw;
+	}
+	.virtual_text_info
+	{
+		font: 1.5vw/1.5vw 'work';
+		color: #393939;
+		display: table-cell;
+		vertical-align: middle;
+		text-decoration: none;
+		width: 100%;
+		float: left;
+		margin: 1vw 0vw 0vw 0vw;
+	}
+}

@@ -256,41 +256,7 @@
 
 
 
-/*----------------------------QUOTE SECTION----------------------------------*/
-/*----------------------------QUOTE SECTION----------------------------------*/
-/*quote mobile*/
-.quote
-{
-  background-image: url('../images/quote.png');
-  background-repeat: no-repeat;
-  background-attachment: contain;
-  background-size: 100%;
-  height: 8.3vw;
-}
 
-
-/*quote tablet*/
-@media (min-width: 400px)
-{
-
-}
-/* desktop*/
-@media (min-width: 768px)
-{
-
-  .quote
-  {
-    background-image: url('../images/quote.png');
-    background-repeat: no-repeat;
-    background-attachment: contain;
-    background-size: 100%;
-    margin: 2vh 5vw 2vh 5vw;
-    height: 8.3vw;
-
-  }
-
-
-}
 /* desktop*/
 @media (min-width: 2560px)
 {

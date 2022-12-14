@@ -90,11 +90,12 @@
 }
 .feature_txt a
 {
-	font: 5vw/5vw 'work-bold';
-	color: #000;
+	font: 4vw/4vw 'work-bold';
+	color: #393939;
 	display: table-cell;
 	vertical-align: middle;
-	/*text-align: center;*/
+	text-decoration: none;
+
 
 }
 .feature_btn
