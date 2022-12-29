@@ -272,3 +272,27 @@
 		margin: 1vw 0vw 0vw 0vw;
 	}
 }
+
+
+
+
+
+
+.virtual_360_test
+{
+	
+	float: left;
+	height: 20vw;
+	width: 100%;
+	/*margin: -20vw 0vw 0vw 0vw;*/
+	/*overflow: hidden;*/
+}
+
+.virtual_img_test
+{
+	float:left;
+	/*background: url('../src/virtual.png') bottom/100% no-repeat;*/
+	height: 20vw; 
+	width: 50%;
+	/*margin: -10vw 0vw 0vw 0vw;*/
+}

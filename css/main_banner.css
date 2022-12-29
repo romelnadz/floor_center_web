@@ -1,90 +1,68 @@
-.nav_container
-	{
-		float: left;
-		width: 100%;
-		height: 10vw;
-	}
+/*//......................................................................
+//.PPPPPPPPP...RRRRRRRRR.......OOOOOO.....MMMMM...MMMMM.....OOOOOO......
+//.PPPPPPPPPP..RRRRRRRRRRR...OOOOOOOOOO...MMMMM...MMMMM...OOOOOOOOOO....
+//.PPPPPPPPPP..RRRRRRRRRRR..OOOOOOOOOOOO..MMMMM...MMMMM..OOOOOOOOOOOO...
+//.PPP....PPPP.RRR.....RRR..OOOO....OOOO..MMMMM...MMMMM..OOOO....OOOO...
+//.PPP....PPPP.RRR.....RRR..OOO......OOO..MMMMMM.MMMMMM..OOO......OOO...
+//.PPPPPPPPPP..RRRRRRRRRRR.ROOO......OOOO.MMMMMM.MMMMMM.MOOO......OOOO..
+//.PPPPPPPPPP..RRRRRRRRRR..ROOO......OOOO.MMMMMM.MMMMMM.MOOO......OOOO..
+//.PPPPPPPPP...RRRRRRRR....ROOO......OOOO.MMMMMMMMMMMMM.MOOO......OOOO..
+//.PPP.........RRR..RRRR....OOO......OOO..MMM.MMMMM.MMM..OOO......OOO...
+//.PPP.........RRR...RRRR...OOOO....OOOO..MMM.MMMMM.MMM..OOOO....OOOO...
+//.PPP.........RRR....RRRR..OOOOOOOOOOOO..MMM.MMMMM.MMM..OOOOOOOOOOOO...
+//.PPP.........RRR....RRRR...OOOOOOOOOO...MMM..MMMM.MMM...OOOOOOOOOO....
+//.PPP.........RRR.....RRRR....OOOOOO.....MMM..MMM..MMM.....OOOOOO......
+//......................................................................
+*/
 
-.nav_m_l
+.promo
 {
-	float: left;
-	width: 0%;
-	width: 5vw;
-}
-.nav_test
-{
- 	position: sticky;
-	background: url('../src/nav_test_mobile.svg') center/100% no-repeat;
-	height: 18vw; 
+	float:left;	
+	background: url('../src/promo_mobile.png') bottom/100% no-repeat;
+	height: 7vw; 
 	width: 100%;
-	top:  0;
-	z-index: 9999;
-}
-.nav_m_r
-{
-	float: left;
-	width: 0%;
-	width: 5vw;
 }
 @media only screen and (min-width: 480px)
 {
-	.nav_container
-	{
-		float: left;
-		width: 100%;
-		height: 10vw;
-	}
-	.nav_test
-	{
-	 	position: sticky;
-		background: url('../src/nav_test.svg') center/100% no-repeat;
-		height: 4.7vw; 
-		width: 100%;
-	
-	}
-	.nav_m_l
-	{
-		float: left;
-		width: 0%;
-		height: 5vw;
-	}	
-	.nav_m_r
-	{
-		float: right;
-		width: 0%;
-		height: 5vw;
-	}		
+				.promo
+				{
+					float:left;	
+					background: url('../src/promo.png') top/100% no-repeat;
+					height: 5vw; 
+					width: 100%;
+				}
 }
 @media only screen and (min-width: 1440px)
 {
-	.nav_container
-	{
-		float: left;
-		width: 100%;
-		height: 5vw;
-	}
-
-	.nav_m_l
-	{
-		float: left;
-		width: 15%;
-		height: 5vw;
-	}	
-	.nav_test
-	{
-	 	float: left;
-	 	position: sticky;
-		background: url('../src/nav_test.svg') center/100% no-repeat;
-		height: 2.8vw; 
-		width: 70%;
-	}
-	.nav_m_r
-	{
-		float: right;
-		width: 15%;
-		height: 5vw;
-	}	
+								.promo
+								{
+									float:left;	
+									background: url('../src/promo.png') center/80% no-repeat;
+									height: 3vw; 
+									width: 100%;
+									background-color: #BF1901;
+								}
 }
+
+
+
+/*//.......................................................................................................
+//.....CCCCCC.......AAAA....ATTTTTTTTTTTEEEEEEEEEE.....GGGGGG.......OOOOOOO....ORRRRRRRRR..RRYY....YYYY..
+//...CCCCCCCCC......AAAAA...ATTTTTTTTTTTEEEEEEEEEE...GGGGGGGGG.....OOOOOOOOO...ORRRRRRRRRR.RRYY....YYY...
+//..CCCCCCCCCCC.....AAAAA...ATTTTTTTTTTTEEEEEEEEEE..GGGGGGGGGGG...OOOOOOOOOOO..ORRRRRRRRRRR.RYYY..YYYY...
+//..CCCC...CCCC....AAAAAA.......TTTT...TEEE.........GGGG...GGGGG..OOOO...OOOOO.ORRR....RRRR..YYY..YYY....
+//..CCC.....CC.....AAAAAAA......TTTT...TEEE........EGGG.....GGG..GOOO.....OOOO.ORRR....RRRR..YYYYYYYY....
+//.CCCC...........AAAA.AAA......TTTT...TEEEEEEEEE..EGG...........GOO.......OOO.ORRRRRRRRRRR...YYYYYY.....
+//.CCCC...........AAA..AAAA.....TTTT...TEEEEEEEEE..EGG...GGGGGGG.GOO.......OOO.ORRRRRRRRRR.....YYYY......
+//.CCCC...........AAAAAAAAA.....TTTT...TEEEEEEEEE..EGG...GGGGGGG.GOO.......OOO.ORRRRRRRR.......YYYY......
+//..CCC.....CC...AAAAAAAAAA.....TTTT...TEEE........EGGG..GGGGGGG.GOOO.....OOOO.ORRR..RRRR......YYYY......
+//..CCCC...CCCC..AAAAAAAAAAA....TTTT...TEEE.........GGGG....GGGG..OOOO...OOOOO.ORRR...RRRR.....YYYY......
+//..CCCCCCCCCCC..AAA.....AAA....TTTT...TEEEEEEEEEE..GGGGGGGGGGGG..OOOOOOOOOOO..ORRR...RRRR.....YYYY......
+//...CCCCCCCCC..AAAA.....AAAA...TTTT...TEEEEEEEEEE...GGGGGGGGGG....OOOOOOOOO...ORRR....RRRR....YYYY......
+//.....CCCCCC...AAA......AAAA...TTTT...TEEEEEEEEEE.....GGGGGG.......OOOOOOO....ORRR.....RRRR...YYYY......
+//.......................................................................................................
+*/
+
 .category_bottom
 {
 	float:left;	
@@ -94,22 +72,52 @@
 }
 @media only screen and (min-width: 480px)
 {
-	.category_bottom
-	{
-		float:left;	
-		background: url('../src/category.png') top/80% no-repeat;
-		height: 5vw; 
-		width: 100%;
-	}
+			.category_bottom
+			{
+				float:left;	
+				background: url('../src/category.png') top/80% no-repeat;
+				height: 5vw; 
+				width: 100%;
+			}
 }
+
+@media only screen and (min-width: 1440px)
+{
+						.category_bottom
+						{
+							float:left;	
+							background: url('../src/category.png') top/80% no-repeat;
+							height: 5vw; 
+							width: 100%;
+						}
+}
+
+
+/*//...........................................................................................................................
+//.MMMMM...MMMMM.....AAAA......III..NNNN....NNN.......BBBBBBBBB.......AAAA......NNNN....NNN.........SSSSSS....MMMMM...MMMMM..
+//.MMMMM...MMMMM.....AAAAA.....III..NNNN....NNN.......BBBBBBBBBBB.....AAAAA.....NNNN....NNN.......SSSSSSSSS...MMMMM...MMMMM..
+//.MMMMM...MMMMM.....AAAAA.....III..NNNNN...NNN.......BBBBBBBBBBB.....AAAAA.....NNNNN...NNN.......SSSSSSSSSS..MMMMM...MMMMM..
+//.MMMMM...MMMMM....AAAAAA.....III..NNNNN...NNN.......BBB.....BBB....AAAAAA.....NNNNN...NNN.......SSS...SSSS..MMMMM...MMMMM..
+//.MMMMMM.MMMMMM....AAAAAAA....III..NNNNNN..NNN.......BBB.....BBB....AAAAAAA....NNNNNN..NNN.......SSSS........MMMMMM.MMMMMM..
+//.MMMMMM.MMMMMM...AAAA.AAA....III..NNNNNNN.NNN.......BBBBBBBBBB....AAAA.AAA....NNNNNNN.NNN.......SSSSSSS.....MMMMMM.MMMMMM..
+//.MMMMMM.MMMMMM...AAA..AAAA...III..NNN.NNN.NNN.......BBBBBBBBBB....AAA..AAAA...NNN.NNN.NNN........SSSSSSSS...MMMMMM.MMMMMM..
+//.MMMMMMMMMMMMM...AAAAAAAAA...III..NNN.NNNNNNN.......BBBBBBBBBBB...AAAAAAAAA...NNN.NNNNNNN..........SSSSSSS..MMMMMMMMMMMMM..
+//.MMM.MMMMM.MMM..AAAAAAAAAA...III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAA...NNN..NNNNNN..............SSSS.MMM.MMMMM.MMM..
+//.MMM.MMMMM.MMM..AAAAAAAAAAA..III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAAA..NNN..NNNNNN...... SSS....SSSS.MMM.MMMMM.MMM..
+//.MMM.MMMMM.MMM..AAA.....AAA..III..NNN...NNNNN.......BBBBBBBBBBB..AAA.....AAA..NNN...NNNNN.......SSSSSSSSSS..MMM.MMMMM.MMM..
+//.MMM..MMMM.MMM.MAAA.....AAAA.III..NNN....NNNN.......BBBBBBBBBBB.BAAA.....AAAA.NNN....NNNN.......SSSSSSSSSS..MMM..MMMM.MMM..
+//.MMM..MMM..MMM.MAA......AAAA.III..NNN....NNNN.......BBBBBBBBBB..BAA......AAAA.NNN....NNNN.........SSSSSS....MMM..MMM..MMM..
+//...........................................................................................................................
+*/
+
 .main_banner_container
 {
 	
 	float: left;
 	width: 100%;
-	height:129vw;
-	background: linear-gradient(180deg, #FFFFFF 11.21%, rgba(100, 100, 100, 0.25) 100%);
-
+	height:140vw;
+	/*padding-top: 10vw;*/
+	/*background: linear-gradient(180deg, #FFFFFF 11.21%, rgba(100, 100, 100, 0.25) 100%);*/
 }
 .main_banner_m_l
 {
@@ -125,6 +133,7 @@
 	height: 115vw; 
 	width: 90%;
 
+
 }
 .main_banner_m_r
 {
@@ -133,55 +142,312 @@
 	height:110vw;
 
 }
-.promo
-{
-	float:left;	
-	background: url('../src/promo_mobile.png') bottom/100% no-repeat;
-	height: 7vw; 
-	width: 100%;
-}
+
+
+
+/*//.............................................................................................................................
+//.MMMMM...MMMMM.....AAAA......III..NNNN....NNN.......BBBBBBBBB.......AAAA......NNNN....NNN.......MMMMM...MMMMM..DDDDDDDDD.....
+//.MMMMM...MMMMM.....AAAAA.....III..NNNN....NNN.......BBBBBBBBBBB.....AAAAA.....NNNN....NNN.......MMMMM...MMMMM..DDDDDDDDDD....
+//.MMMMM...MMMMM.....AAAAA.....III..NNNNN...NNN.......BBBBBBBBBBB.....AAAAA.....NNNNN...NNN.......MMMMM...MMMMM..DDDDDDDDDDD...
+//.MMMMM...MMMMM....AAAAAA.....III..NNNNN...NNN.......BBB.....BBB....AAAAAA.....NNNNN...NNN.......MMMMM...MMMMM..DDD....DDDD...
+//.MMMMMM.MMMMMM....AAAAAAA....III..NNNNNN..NNN.......BBB.....BBB....AAAAAAA....NNNNNN..NNN.......MMMMMM.MMMMMM..DDD.....DDD...
+//.MMMMMM.MMMMMM...AAAA.AAA....III..NNNNNNN.NNN.......BBBBBBBBBB....AAAA.AAA....NNNNNNN.NNN.......MMMMMM.MMMMMM..DDD.....DDDD..
+//.MMMMMM.MMMMMM...AAA..AAAA...III..NNN.NNN.NNN.......BBBBBBBBBB....AAA..AAAA...NNN.NNN.NNN.......MMMMMM.MMMMMM..DDD.....DDDD..
+//.MMMMMMMMMMMMM...AAAAAAAAA...III..NNN.NNNNNNN.......BBBBBBBBBBB...AAAAAAAAA...NNN.NNNNNNN.......MMMMMMMMMMMMM..DDD.....DDDD..
+//.MMM.MMMMM.MMM..AAAAAAAAAA...III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAA...NNN..NNNNNN.......MMM.MMMMM.MMM..DDD.....DDD...
+//.MMM.MMMMM.MMM..AAAAAAAAAAA..III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAAA..NNN..NNNNNN.......MMM.MMMMM.MMM..DDD....DDDD...
+//.MMM.MMMMM.MMM..AAA.....AAA..III..NNN...NNNNN.......BBBBBBBBBBB..AAA.....AAA..NNN...NNNNN.......MMM.MMMMM.MMM..DDDDDDDDDDD...
+//.MMM..MMMM.MMM.MAAA.....AAAA.III..NNN....NNNN.......BBBBBBBBBBB.BAAA.....AAAA.NNN....NNNN.......MMM..MMMM.MMM..DDDDDDDDDD....
+//.MMM..MMM..MMM.MAA......AAAA.III..NNN....NNNN.......BBBBBBBBBB..BAA......AAAA.NNN....NNNN.......MMM..MMM..MMM..DDDDDDDDD.....
+//.............................................................................................................................
+*/
+
+
 @media only screen and (min-width: 480px)
 {
-	.promo
-	{
-		float:left;	
-		background: url('../src/promo.png') top/100% no-repeat;
-		height: 5vw; 
-		width: 100%;
-	}
-}
-@media only screen and (min-width: 1440px)
-{
-	.promo
-	{
-		float:left;	
-		background: url('../src/promo.png') center/80% no-repeat;
-		height: 3vw; 
-		width: 100%;
-		background-color: #BF1901;
-	}
+
+				.main_banner_container
+				{
+					
+					float: left;
+					width: 100%;
+					height:37vw;
+					/*padding-top: 2vw;*/
+					
+
+				}
+				.main_banner_m_l
+				{
+					float:left;
+					width: 5%;
+					height:33vw;
+
+
+				}
+				.main_banner_center
+				{
+					float:left;
+					height: 33vw; 
+					width: 90%;
+
+				}
+				.main_banner_m_r
+				{
+					float:right;
+					width: 5%;
+					height:33vw;
+
+				}
+
 }
 
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
+/*//.........................................................................................................................
+//.MMMMM...MMMMM.....AAAA......III..NNNN....NNN.......BBBBBBBBB.......AAAA......NNNN....NNN.......LLL...........GGGGGG.....
+//.MMMMM...MMMMM.....AAAAA.....III..NNNN....NNN.......BBBBBBBBBBB.....AAAAA.....NNNN....NNN.......LLL.........GGGGGGGGGG...
+//.MMMMM...MMMMM.....AAAAA.....III..NNNNN...NNN.......BBBBBBBBBBB.....AAAAA.....NNNNN...NNN.......LLL.........GGGGGGGGGGG..
+//.MMMMM...MMMMM....AAAAAA.....III..NNNNN...NNN.......BBB.....BBB....AAAAAA.....NNNNN...NNN.......LLL........GGGG....GGGG..
+//.MMMMMM.MMMMMM....AAAAAAA....III..NNNNNN..NNN.......BBB.....BBB....AAAAAAA....NNNNNN..NNN.......LLL........GGG......GG...
+//.MMMMMM.MMMMMM...AAAA.AAA....III..NNNNNNN.NNN.......BBBBBBBBBB....AAAA.AAA....NNNNNNN.NNN.......LLL.......LGGG...........
+//.MMMMMM.MMMMMM...AAA..AAAA...III..NNN.NNN.NNN.......BBBBBBBBBB....AAA..AAAA...NNN.NNN.NNN.......LLL.......LGGG...GGGGGG..
+//.MMMMMMMMMMMMM...AAAAAAAAA...III..NNN.NNNNNNN.......BBBBBBBBBBB...AAAAAAAAA...NNN.NNNNNNN.......LLL.......LGGG...GGGGGG..
+//.MMM.MMMMM.MMM..AAAAAAAAAA...III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAA...NNN..NNNNNN.......LLL........GGG...GGGGGG..
+//.MMM.MMMMM.MMM..AAAAAAAAAAA..III..NNN..NNNNNN.......BBB.....BBBB.AAAAAAAAAAA..NNN..NNNNNN.......LLL........GGGG.....GGG..
+//.MMM.MMMMM.MMM..AAA.....AAA..III..NNN...NNNNN.......BBBBBBBBBBB..AAA.....AAA..NNN...NNNNN.......LLLLLLLLLL..GGGGGGGGGGG..
+//.MMM..MMMM.MMM.MAAA.....AAAA.III..NNN....NNNN.......BBBBBBBBBBB.BAAA.....AAAA.NNN....NNNN.......LLLLLLLLLL..GGGGGGGGGG...
+//.MMM..MMM..MMM.MAA......AAAA.III..NNN....NNNN.......BBBBBBBBBB..BAA......AAAA.NNN....NNNN.......LLLLLLLLLL....GGGGGG.....
+//.........................................................................................................................
+*/
+
+@media only screen and (min-width: 1440px)
+{
+
+								.main_banner_container
+									{
+										
+										float: left;
+										width: 100%;
+										height:20vw;
+
+
+
+									}
+
+									.main_banner_m_l
+									{
+										float:left;
+										width: 20%;
+										height:20vw;
+										/*margin: -20vw 0vw 0vw 0vw;*/
+
+
+
+									}
+									.main_banner_center
+									{
+										float:left;
+										height: 20vw; 
+										width: 60%;
+										/*margin: -20vw 0vw 0vw 0vw;*/
+
+
+									}
+									.main_banner_m_r
+									{
+										float:right;
+										width: 20%;
+										height:20vw;
+										/*margin: -20vw 0vw 0vw 0vw;*/
+
+
+									}
+
+}
+
+
+/*//...........................................................................................
+//.BBBBBBBBB.......AAAA......NNNN....NNN.......LLL........EEEEEEEEEE..FFFFFFFFFF.TTTTTTTTTT..
+//.BBBBBBBBBBB.....AAAAA.....NNNN....NNN.......LLL........EEEEEEEEEE..FFFFFFFFFF.TTTTTTTTTT..
+//.BBBBBBBBBBB.....AAAAA.....NNNNN...NNN.......LLL........EEEEEEEEEE..FFFFFFFFFF.TTTTTTTTTT..
+//.BBB.....BBB....AAAAAA.....NNNNN...NNN.......LLL........EEE.........FFF............TTT.....
+//.BBB.....BBB....AAAAAAA....NNNNNN..NNN.......LLL........EEE.........FFF............TTT.....
+//.BBBBBBBBBB....AAAA.AAA....NNNNNNN.NNN.......LLL........EEEEEEEEEE..FFFFFFFFF......TTT.....
+//.BBBBBBBBBB....AAA..AAAA...NNN.NNN.NNN.......LLL........EEEEEEEEEE..FFFFFFFFF......TTT.....
+//.BBBBBBBBBBB...AAAAAAAAA...NNN.NNNNNNN.......LLL........EEEEEEEEEE..FFFFFFFFF......TTT.....
+//.BBB.....BBBB.AAAAAAAAAA...NNN..NNNNNN.......LLL........EEE.........FFF............TTT.....
+//.BBB.....BBBB.AAAAAAAAAAA..NNN..NNNNNN.......LLL........EEE.........FFF............TTT.....
+//.BBBBBBBBBBB..AAA.....AAA..NNN...NNNNN.......LLLLLLLLLL.EEEEEEEEEEE.FFF............TTT.....
+//.BBBBBBBBBBB.BAAA.....AAAA.NNN....NNNN.......LLLLLLLLLL.EEEEEEEEEEE.FFF............TTT.....
+//.BBBBBBBBBB..BAA......AAAA.NNN....NNNN.......LLLLLLLLLL.EEEEEEEEEEE.FFF............TTT.....
+//...........................................................................................
+*/
 
 .main_banner_left
 {
 	float:left;
 	/*background: url('../src/main_banner_right_iso_test.png') bottom/100% no-repeat;*/
-	height: 46vw; 
+	height: 55vw; 
 	width: 100%;
 
+}
+
+
+@media only screen and (min-width: 480px)
+{
+
+
+		.main_banner_left
+		{
+			float:left;
+			/*background: url('../src/main_banner_right_iso_test.png') bottom/100% no-repeat;*/
+			height: 33vw; 
+			width: 50%;
+		}
+
+}
+
+@media only screen and (min-width: 1400px)
+{
+	
+					.main_banner_left
+					{
+						float:left;
+						/*background: url('../src/main_banner_right_iso_test.png') bottom/100% no-repeat;*/
+						height: 18vw; 
+						width: 50%;
+
+					}
+
+}
+
+
+
+/*
+//............................................................................................................
+//.LLL.............HHH.....HHH..EEEEEEEEEE.....AAAA......DDDDDDDDD.........TTTTTTTTTTTXXX....XXXX.TTTTTTTTTT..
+//.LLL.............HHH.....HHH..EEEEEEEEEE.....AAAAA.....DDDDDDDDDD........TTTTTTTTTTTXXXX..XXXX..TTTTTTTTTT..
+//.LLL.............HHH.....HHH..EEEEEEEEEE.....AAAAA.....DDDDDDDDDDD.......TTTTTTTTTTT.XXXXXXXX...TTTTTTTTTT..
+//.LLL.............HHH.....HHH..EEE...........AAAAAA.....DDD....DDDD...........TTT.....XXXXXXXX.......TTT.....
+//.LLL.............HHH.....HHH..EEE...........AAAAAAA....DDD.....DDD...........TTT......XXXXXX........TTT.....
+//.LLL.............HHHHHHHHHHH..EEEEEEEEEE...AAAA.AAA....DDD.....DDDD..........TTT.......XXXX.........TTT.....
+//.LLL.............HHHHHHHHHHH..EEEEEEEEEE...AAA..AAAA...DDD.....DDDD..........TTT.......XXXX.........TTT.....
+//.LLL.............HHHHHHHHHHH..EEEEEEEEEE...AAAAAAAAA...DDD.....DDDD..........TTT......XXXXXX........TTT.....
+//.LLL.............HHH.....HHH..EEE.........AAAAAAAAAA...DDD.....DDD...........TTT.....XXXXXXX........TTT.....
+//.LLL.............HHH.....HHH..EEE.........AAAAAAAAAAA..DDD....DDDD...........TTT.....XXXXXXXX.......TTT.....
+//.LLLLLLLLLL......HHH.....HHH..EEEEEEEEEEE.AAA.....AAA..DDDDDDDDDDD...........TTT....XXXX..XXXX......TTT.....
+//.LLLLLLLLLL......HHH.....HHH..EEEEEEEEEEEEAAA.....AAAA.DDDDDDDDDD............TTT....XXXX..XXXX......TTT.....
+//.LLLLLLLLLL......HHH.....HHH..EEEEEEEEEEEEAA......AAAA.DDDDDDDDD.............TTT...TXXX....XXXX.....TTT.....
+//............................................................................................................*/
+
+/* lineup class and keyframes */
+.main_banner_txt {
+  animation: 2s anim_main_banner_txt ease-out;
+}
+@keyframes anim_main_banner_txt
+{
+	{
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .main_banner_txt
 {
 	float:left;
-	background: url('../src/main_banner_txt.svg') bottom/100% no-repeat;
-	height: 20vw; 
+	/*background: url('../src/main_banner_txt.svg') bottom/100% no-repeat;*/
+	height: auto; 
 	width: 100%;
+	font: 10vw/10vw 'work-bold';
+	color: #858585;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: -0.6vw;
+	width: 100%;
+	padding: 7vw 0vw 3vw 5vw;
+	margin: 0vw 0vw 0vw 0vw;
+	float: left;
+	/*background-color: red;*/
 }
+
+
+@media only screen and (min-width: 480px)
+{
+
+				.main_banner_txt
+				{
+					float:left;
+					/*background: url('../src/main_banner_txt.svg') bottom/100% no-repeat;*/
+					height: 22vw; 
+					width: 100%;
+					font: 5vw/5vw 'work-bold';
+					color: #858585;
+					display: table-cell;
+					vertical-align: middle;
+					text-decoration: none;
+					letter-spacing: -0.3vw;
+					width: 100%;
+					padding: 5vw 0vw 0vw 2.5vw;
+					margin: 0vw 0vw 0vw 0vw;
+					float: left;
+					/*background-color: red;*/
+				}
+
+}
+
+@media only screen and (min-width: 1400px)
+{
+	
+							.main_banner_txt
+							{
+								float:left;
+								/*background: url('../src/main_banner_txt.svg') bottom/100% no-repeat;*/
+								height: 13vw; 
+								width: 100%;
+								font: 3.5vw/3.2vw 'work-bold';
+								color: #858585;
+								display: table-cell;
+								vertical-align: middle;
+								text-decoration: none;
+								letter-spacing: -0.1vw;
+								width: 100%;
+								padding: 2.5vw 0vw 0vw 1.5vw;
+								margin: 0vw 0vw 0vw 0vw;
+								float: left;
+								/*background-color: red;*/
+							}
+
+
+}
+
+
+
+/*//...............................................................................................
+//.LLL.............BBBBBBBBB....TTTTTTTTTTTNNNN....NNN..........CCCCCC....TTTTTTTTTTT..AAAA......
+//.LLL.............BBBBBBBBBBB..TTTTTTTTTTTNNNN....NNN........CCCCCCCCC...TTTTTTTTTTT..AAAA......
+//.LLL.............BBBBBBBBBBB..TTTTTTTTTTTNNNNN...NNN.......CCCCCCCCCCC..TTTTTTTTTTT.AAAAAA.....
+//.LLL.............BBB.....BBB......TTT....NNNNN...NNN.......CCCC...CCCC......TTT.....AAAAAA.....
+//.LLL.............BBB.....BBB......TTT....NNNNNN..NNN.......CCC.....CC.......TTT....AAAAAAA.....
+//.LLL.............BBBBBBBBBB.......TTT....NNNNNNN.NNN...... CCC..............TTT....AAA.AAAA....
+//.LLL.............BBBBBBBBBB.......TTT....NNN.NNN.NNN...... CCC..............TTT....AAA..AAA....
+//.LLL.............BBBBBBBBBBB......TTT....NNN.NNNNNNN...... CCC..............TTT...TAAAAAAAAA...
+//.LLL.............BBB.....BBBB.....TTT....NNN..NNNNNN.......CCC.....CC.......TTT...TAAAAAAAAA...
+//.LLL.............BBB.....BBBB.....TTT....NNN..NNNNNN.......CCCC...CCCC......TTT...TAAAAAAAAA...
+//.LLLLLLLLLL......BBBBBBBBBBB......TTT....NNN...NNNNN.......CCCCCCCCCCC......TTT..TTAA....AAAA..
+//.LLLLLLLLLL......BBBBBBBBBBB......TTT....NNN....NNNN........CCCCCCCCC.......TTT..TTA......AAA..
+//.LLLLLLLLLL......BBBBBBBBBB.......TTT....NNN....NNNN..........CCCCCC........TTT.TTTA......AAA..
+//...............................................................................................
+*/
+
 .main_banner_btn
 {
 	float:left;
@@ -199,6 +465,68 @@
 }
 
 
+@media only screen and (min-width: 480px)
+{
+
+
+				.main_banner_btn
+				{
+					float:left;
+					background: url('../src/main_banner_btn.svg') bottom/100% no-repeat;
+					height: 7vw; 
+					width: 100%;
+				}
+				.main_banner_btn:hover
+				{
+
+					background: url('../src/main_banner_btn_hover.svg') center/100% no-repeat;
+					transition-duration: .3s;
+					transition-property: opacity;
+
+				}
+}
+
+
+@media only screen and (min-width: 1400px)
+{
+	
+								.main_banner_btn
+								{
+									float:left;
+									background: url('../src/main_banner_btn.svg') center/100% no-repeat;
+									height: 5vw; 
+									width: 100%;
+								}
+
+								.main_banner_btn:hover
+								{
+
+									background: url('../src/main_banner_btn_hover.svg') center/100% no-repeat;
+									transition-duration: .3s;
+									transition-property: opacity;
+
+								}
+
+}
+
+
+/*//......................................................................................................
+//.BBBBBBBBB.......AAAA......NNNN....NNN.......RRRRRRRRR....III.....GGGGGG.....HHH.....HHH..TTTTTTTTTT..
+//.BBBBBBBBBBB.....AAAAA.....NNNN....NNN.......RRRRRRRRRRR..III...GGGGGGGGGG...HHH.....HHH..TTTTTTTTTT..
+//.BBBBBBBBBBB.....AAAAA.....NNNNN...NNN.......RRRRRRRRRRR..III...GGGGGGGGGGG..HHH.....HHH..TTTTTTTTTT..
+//.BBB.....BBB....AAAAAA.....NNNNN...NNN.......RRR.....RRR..III..GGGG....GGGG..HHH.....HHH......TTT.....
+//.BBB.....BBB....AAAAAAA....NNNNNN..NNN.......RRR.....RRR..III..GGG......GG...HHH.....HHH......TTT.....
+//.BBBBBBBBBB....AAAA.AAA....NNNNNNN.NNN.......RRRRRRRRRRR..III.IGGG...........HHHHHHHHHHH......TTT.....
+//.BBBBBBBBBB....AAA..AAAA...NNN.NNN.NNN.......RRRRRRRRRR...III.IGGG...GGGGGG..HHHHHHHHHHH......TTT.....
+//.BBBBBBBBBBB...AAAAAAAAA...NNN.NNNNNNN.......RRRRRRRR.....III.IGGG...GGGGGG..HHHHHHHHHHH......TTT.....
+//.BBB.....BBBB.AAAAAAAAAA...NNN..NNNNNN.......RRR..RRRR....III..GGG...GGGGGG..HHH.....HHH......TTT.....
+//.BBB.....BBBB.AAAAAAAAAAA..NNN..NNNNNN.......RRR...RRRR...III..GGGG.....GGG..HHH.....HHH......TTT.....
+//.BBBBBBBBBBB..AAA.....AAA..NNN...NNNNN.......RRR....RRRR..III...GGGGGGGGGGG..HHH.....HHH......TTT.....
+//.BBBBBBBBBBB.BAAA.....AAAA.NNN....NNNN.......RRR....RRRR..III...GGGGGGGGGG...HHH.....HHH......TTT.....
+//.BBBBBBBBBB..BAA......AAAA.NNN....NNNN.......RRR.....RRRR.III.....GGGGGG.....HHH.....HHH......TTT.....
+//......................................................................................................
+*/
+
 
 .main_banner_right
 {
@@ -208,15 +536,58 @@
 	width: 100%;
 }
 
+@media only screen and (min-width: 480px)
+{
 
-/*--------------HIDE ON DEAFULT------------------*/
+			.main_banner_right
+			{
+				float:right;
+				background: url('../src/main_banner_right_iso.png') bottom/100% no-repeat;
+				height: 33vw; 
+				width: 50%;
+
+			}
+
+}
+
+
+@media only screen and (min-width: 1400px)
+{
+								.main_banner_right
+								{
+									float:right;
+									background: url('../src/main_banner_right_iso.png') bottom/100% no-repeat;
+									height: 20vw; 
+									width: 50%;
+
+								}
+
+}
+
+/*//....................................................................................
+//.RRRRRRRRR.........HHH.....HHH.....OOOOOO....OVV......VVV.EEEEEEEEEE..RRRRRRRRR.....
+//.RRRRRRRRRRR.......HHH.....HHH...OOOOOOOOOO..OVVV....VVVV.EEEEEEEEEE..RRRRRRRRRRR...
+//.RRRRRRRRRRR.......HHH.....HHH..OOOOOOOOOOOO.OVVV....VVVV.EEEEEEEEEE..RRRRRRRRRRR...
+//.RRR.....RRR.......HHH.....HHH..OOOO....OOOO..VVV....VVV..EEE.........RRR.....RRR...
+//.RRR.....RRR.......HHH.....HHH..OOO......OOO..VVVV..VVVV..EEE.........RRR.....RRR...
+//.RRRRRRRRRRR.......HHHHHHHHHHH.HOOO......OOOO.VVVV..VVV...EEEEEEEEEE..RRRRRRRRRRR...
+//.RRRRRRRRRR........HHHHHHHHHHH.HOOO......OOOO..VVV..VVV...EEEEEEEEEE..RRRRRRRRRR....
+//.RRRRRRRR..........HHHHHHHHHHH.HOOO......OOOO..VVVVVVVV...EEEEEEEEEE..RRRRRRRR......
+//.RRR..RRRR.........HHH.....HHH..OOO......OOO...VVVVVVV....EEE.........RRR..RRRR.....
+//.RRR...RRRR........HHH.....HHH..OOOO....OOOO....VVVVVV....EEE.........RRR...RRRR....
+//.RRR....RRRR.......HHH.....HHH..OOOOOOOOOOOO....VVVVVV....EEEEEEEEEEE.RRR....RRRR...
+//.RRR....RRRR.......HHH.....HHH...OOOOOOOOOO.....VVVVV.....EEEEEEEEEEE.RRR....RRRR...
+//.RRR.....RRRR......HHH.....HHH.....OOOOOO........VVVV.....EEEEEEEEEEE.RRR.....RRRR..
+//....................................................................................
+*/
+
 .main_banner_right_hover
 
 {
 	opacity: 0;
 	float:left;
 	background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
-	height: 33vw; 
+	height: 65vw; 
 	width: 100%;
 
 }
@@ -226,310 +597,97 @@
 	opacity: 1;
 	float:left;
 	background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
-	height: 33vw; 
+	height: 65vw; 
 	width: 100%;
 	transition-duration: .5s;
 
 
 }
 
+@media only screen and (min-width: 480px)
+{
+	
 
+			.main_banner_right_hover
+
+			{
+				opacity: 0;
+				float:left;
+				background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
+				height:33vw; 
+				width: 100%;
+
+			}
+			.main_banner_right_hover:hover
+
+			{
+				opacity: 1;
+				float:left;
+				background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
+				height:33vw; 
+				width: 100%;
+				transition-duration: .5s;
+
+			}
+}
+
+@media only screen and (min-width: 1400px)
+{
+	
+
+									.main_banner_right_hover
+
+									{
+										opacity: 0;
+										float:left;
+										background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
+										height:19vw; 
+										width: 100%;
+
+									}
+									.main_banner_right_hover:hover
+
+									{
+										opacity: 1;
+										float:left;
+										background: url('../src/main_banner_right_iso_hover.png') center/100% no-repeat;
+										height:19vw; 
+										width: 100%;
+										transition-duration: .5s;
+
+									}
+								}
+
+/*//...........................................................
+//.RRRRRRRRR.........MMMMM...MMMMM..TTTTTTTTTTTBBBBBBBBB.....
+//.RRRRRRRRRRR.......MMMMM...MMMMM..TTTTTTTTTTTBBBBBBBBBBB...
+//.RRRRRRRRRRR.......MMMMM...MMMMM..TTTTTTTTTTTBBBBBBBBBBB...
+//.RRR.....RRR.......MMMMM...MMMMM......TTT....BBB.....BBB...
+//.RRR.....RRR.......MMMMMM.MMMMMM......TTT....BBB.....BBB...
+//.RRRRRRRRRRR.......MMMMMM.MMMMMM......TTT....BBBBBBBBBB....
+//.RRRRRRRRRR........MMMMMM.MMMMMM......TTT....BBBBBBBBBB....
+//.RRRRRRRR..........MMMMMMMMMMMMM......TTT....BBBBBBBBBBB...
+//.RRR..RRRR.........MMM.MMMMM.MMM......TTT....BBB.....BBBB..
+//.RRR...RRRR........MMM.MMMMM.MMM......TTT....BBB.....BBBB..
+//.RRR....RRRR.......MMM.MMMMM.MMM......TTT....BBBBBBBBBBB...
+//.RRR....RRRR.......MMM..MMMM.MMM......TTT....BBBBBBBBBBB...
+//.RRR.....RRRR......MMM..MMM..MMM......TTT....BBBBBBBBBB....
+//...........................................................
+*/
 
 .main_banner_right_mtb
 {
 	float: left ;
 	width: 100%; 
-	height:10vw;
-}
-
-
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-/*------------------------BANNER LEFT AND RIGHT------------------------------*/
-
-
-
-/*--------------------------CAROUSEL AND CALCU-------------------------------*/
-/*--------------------------CAROUSEL AND CALCU-------------------------------*/
-/*--------------------------CAROUSEL AND CALCU-------------------------------*/
-/*--------------------------CAROUSEL AND CALCU-------------------------------*/
-.bottom_banner
-{
-	float: left;
-	width: 100%; 
-	height: 85vw;
-
-}
-
-.carousel_calcu_m
-{
-	float: left;
-	width: 0%; 
-	height: 20vw;
-
-}
-.carousel_calcu_center
-{
-	float: left;
-	width: 100%; 
-	height: 20vw;
-}
-.calcu_container
-{
-
-	float: left; 
-	width: 100%; 
-	height: 32vw;
-
-}
-
-.calcu
-{
-	float:right;
-	/*background: url('../src/calcu.svg') center/100% no-repeat;*/
-	background: url('../src/calcu_mobile.png') center/100% no-repeat;
-	height: 32vw; 
-	width: 100%;
-
-}
-
-.carousel_calcu_middle
-{
-	float: left; 
-	width: 0%; 
-	height: 20vw;"
-}
-.carousel_container
-{
-	float: left; 
-	width: 100%; 
-	height: 43vw;
-
-}
-
-.carousel-item1
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
-}
-.carousel-item2
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
-}
-.carousel-item3
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
-}
-.carousel-item4
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
-}
-.carousel-item5
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
-}
-.carousel-item6
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner_mobile2.png') center/100% no-repeat;
-	height: 45vw; 
-	width: 100%;
+	height:5vw;
 }
 
 
 
-/*DESKTOP CAROUSEL*/
-/*.carousel-item1
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner2.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-.carousel-item2
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner3.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-.carousel-item3
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner4.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-.carousel-item4
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner5.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-.carousel-item5
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner6.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-.carousel-item6
-{
-	float:left;
-	background: url('../src/carousel/bottom-banner7.png') center/100% no-repeat;
-	height: 20vw; 
-	width: 100%;
-}
-*/
-
-.carousel-control-prev
-{
-	height: 50vw;
-}
-.carousel-control-prev-icon
-{
-	width: 8vw !important;
-	height: 8vw !important;
-}
-.carousel-control-next
-{
-	height: 50vw;
-
-}
-.carousel-control-next-icon
-{
-	width: 8vw !important;
-	height: 8vw !important;
-}
-
-.carousel-indicators {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 2;
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin-right: 15%;
-	margin-bottom: -17vw !important;
-	margin-left: 15%;
-	list-style: none;
-	height: 3vw !important;
-
-}
-
-.carousel-indicators [data-bs-target] {
-	box-sizing: content-box;
-	flex: 0 1 auto;
-	width: 8vw !important;
-	height: 1vw !important;
-	padding: 0;
-	margin-right: 1vw !important;
-	margin-left: 1vw !important;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: ;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	opacity: .5;
-	transition: opacity .6s ease;
-}
-
-@media only screen and (min-width: 480px)
-{
-		.carousel-control-prev
-	{
-		height: 20vw;
-	}
-	.carousel-control-prev-icon
-	{
-		width: 2vw !important;
-		height: 2vw !important;
-	}
-	.carousel-control-next
-	{
-		height: 20vw;
-
-	}
-	.carousel-control-next-icon
-	{
-		width: 2vw !important;
-		height: 2vw !important;
-	}
-
-	.carousel-indicators {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 2;
-		display: flex;
-		justify-content: center;
-		padding: 0;
-		margin-right: 15%;
-		margin-bottom: 3vw !important;
-		margin-left: 15%;
-		list-style: none;
-		height: 3vw !important;
-
-	}
-
-	.carousel-indicators [data-bs-target] {
-		box-sizing: content-box;
-		flex: 0 1 auto;
-		width: 3vw !important;
-		height: .3vw !important;
-		padding: 0;
-		margin-right: .3vw !important;
-		margin-left: .3vw !important;
-		text-indent: -999px;
-		cursor: pointer;
-		background-color: #fff;
-		background-clip: padding-box;
-		border: ;
-		border-top: 10px solid transparent;
-		border-bottom: 10px solid transparent;
-		opacity: .5;
-		transition: opacity .6s ease;
-	}
-}
 
 
-.carousel
-	{
-		height: 21vw !important;
-	}
-}
-@media only screen and (min-width: 480px)
-{
-	.carousel
-	{
-		height: 21vw !important;
-	}
-}
-@media only screen and (min-width: 1440px)
-{
-	.carousel
-	{
-		height: 18vw !important;
-	}
-}
+
+
+
+
+

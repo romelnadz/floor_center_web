@@ -117,7 +117,7 @@
 {
 	float: left; 
 	width: 0%; 
-	height: 20vw;"
+	height: 20vw;
 }
 .carousel_container
 {
@@ -143,7 +143,7 @@
 				{
 					float: right; 
 					width: 1%; 
-					height: 20vw;"
+					height: 20vw;
 				}
 				.carousel_container
 				{
@@ -305,7 +305,6 @@
 	cursor: pointer;
 	background-color: #fff;
 	background-clip: padding-box;
-	border: ;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 	opacity: .5;
@@ -363,7 +362,6 @@
 							cursor: pointer;
 							background-color: #fff;
 							background-clip: padding-box;
-							border: ;
 							border-top: 10px solid transparent;
 							border-bottom: 10px solid transparent;
 							opacity: .5;

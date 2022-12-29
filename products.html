@@ -42,16 +42,27 @@
 	    	 }
 
 	    </style>
+	
 	<!-- homepage new css -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+	<!-- product_img -->
+	<link rel="stylesheet" type="text/css" href="css/product_img.css">
 
 </head>
 <body>
 
 
+
 <div class="
 w-[100%] h-[15vw]
 bg-gray-300">
+
+<!-- component -->
+<!-- This is an example component -->
+
+    
+
 	
 </div>
 
@@ -59,7 +70,7 @@ bg-gray-300">
 w-[90%] h-[500vw]
 lg:w-[80%] lg:h-[110vw]
 mx-auto
-bg-gray-100">
+">
 
 	<!-- 
 	..######..####.########..########.########.....###....########.
@@ -73,10 +84,136 @@ bg-gray-100">
 
 
 	<div class="
-	bg-gray-200
 	w-[100%] h-[10vw]
 	lg:w-[20%] lg:h-[110vw] 
-	float-left ">
+	float-left 
+	sm:hidden lg:block">
+   		<!-- 
+		..######.....###....########.########..######....#######..########..##....##
+		.##....##...##.##......##....##.......##....##..##.....##.##.....##..##..##.
+		.##........##...##.....##....##.......##........##.....##.##.....##...####..
+		.##.......##.....##....##....######...##...####.##.....##.########.....##...
+		.##.......#########....##....##.......##....##..##.....##.##...##......##...
+		.##....##.##.....##....##....##.......##....##..##.....##.##....##.....##...
+		..######..##.....##....##....########..######....#######..##.....##....##...
+   		 -->
+
+		   	<div class='w-[100%] mt-[7vw] bg-white '>
+		   	    
+		   	    <details class="w-full bg-white border border-gray-200 cursor-pointer ">
+		   	        <summary class="
+		   	        font-work_sans font-semibold text-dark 
+		   	        w-full bg-white  flex justify-between px-4 py-3  after:content-['+']">
+		   	    	Shape and Sizes
+		   	    	</summary>
+		   	        <p class="px-4 py-3">
+		   	       	<div style="background: url('../src/category/shape_mobile.svg') top/100% no-repeat; height: 35vw; width:100%;">
+		   	       		<br>
+		   	       		
+		   	       	</div>
+		   	        </p>
+		   	    </details>
+
+		   	    <details class="w-full bg-white border border-gray-200 cursor-pointer ">
+		   	        <summary class="
+		   	        font-work_sans font-semibold text-dark 
+		   	        w-full bg-white  flex justify-between px-4 py-3  after:content-['+']">
+		   	    	Material
+		   	    	</summary>
+		   	        <p class="px-4 py-3">
+		   	        	<div style="background: url('../src/category/look_mobile.svg') top/100% no-repeat; height: 40vw; width:100%;">
+		   	           		<br>
+		   	           	</div>
+		   	    </details>
+
+		   	    <details class="w-full bg-white border border-gray-200 cursor-pointer ">
+		   	        <summary class="
+		   	        font-work_sans font-semibold text-dark 
+		   	        w-full bg-white  flex justify-between px-4 py-3  after:content-['+']">
+		   	    	Tile Finish
+		   	    	</summary>
+		   	        <p class="px-4 py-3">
+		   	        	<div style="background: url('../src/category/finish_mobile.svg') top/100% no-repeat; height: 30vw; width:100%;">
+		   	           		<br>
+		   	           	</div>
+		   	        </p>
+		   	    </details>
+
+		   	    <details class="w-full bg-white border border-gray-200 cursor-pointer ">
+		   	        <summary class="
+		   	        font-work_sans font-semibold text-dark 
+		   	        w-full bg-white  flex justify-between px-4 py-3  after:content-['+']">
+		   	    	Tile Color
+		   	    	</summary>
+		   	        <p class="px-4 py-3">
+		   	        Etiam maximus vitae eros eu vestibulum. Donec posuere, magna non tincidunt dignissim, magna tortor mollis augue, at maximus ante lacus vel tellus. Vestibulum vestibulum consectetur tortor id sagittis. Suspendisse nisi ipsum, pretium a lorem at, laoreet condimentum arcu
+		   	        </p>
+		   	    </details>
+
+		   	    <!-- THE CSS -->
+		   	    <style>
+		   	        details summary::-webkit-details-marker {
+		   	        display: none;
+		   	        }
+
+		   	         
+		   	        details[open] summary {
+		   	            background: gray;
+		   	            color: white
+		   	        }
+
+		   	        details[open] summary::after {
+		   	            content: "-";
+		   	        }
+
+		   	        details[open] summary ~ * {
+		   	            animation: fadein 0.3s ease-in-out;
+		   	        }
+
+		   	        details[open] summary p {
+		   	            opacity: 0;
+		   	            animation-name: showContent;
+		   	            animation-duration: 0.6s;
+		   	            animation-delay: 0.2s;
+		   	            animation-fill-mode: forwards;
+		   	            margin: 0;
+		   	        }
+
+		   	        @keyframes fadein {
+		   	          from {
+		   	            opacity: 0;
+		   	          }
+		   	          to {
+		   	            opacity: 1;
+		   	          }
+		   	        }
+
+		   	        @keyframes showContent {
+		   	            from {
+		   	            opacity: 0;
+		   	            height: 0;
+		   	            }
+		   	            to {
+		   	            opacity: 1;
+		   	            height: auto;
+		   	            }
+		   	        }
+		   	        @keyframes slideDown {
+		   	            from {
+		   	            opacity: 0;
+		   	            height: 0;
+		   	            padding: 0;
+		   	            }
+
+		   	            to {
+		   	            opacity: 1;
+		   	            height: auto;
+		   	            }
+		   	        }
+		   	    </style>
+		   	</div>
+
+                
 	</div>
 
 		<!-- 
@@ -96,19 +233,19 @@ bg-gray-100">
 		float-left">
 			<!-- <div class="bg-gray-100 h-[3vw]"> </div> -->
 			
-			<!-- 
-			..######...########..####.########.........................................................
-			.##....##..##.....##..##..##.....##........................................................
-			.##........##.....##..##..##.....##........................................................
-			.##...####.########...##..##.....##........................................................
-			.##....##..##...##....##..##.....##........................................................
-			.##....##..##....##...##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-			..######...##.....##.####.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###
-			 -->
+		<!-- 
+		..######...########..####.########.........................................................
+		.##....##..##.....##..##..##.....##........................................................
+		.##........##.....##..##..##.....##........................................................
+		.##...####.########...##..##.....##........................................................
+		.##....##..##...##....##..##.....##........................................................
+		.##....##..##....##...##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+		..######...##.....##.####.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###
+		 -->
 
 			<div class="
 			grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-[2vw] gap-x-[1vw]
-			mt-[6vw] mx-[2vw]">
+			mt-[6vw] mx-[2vw] drop-shadow-lg">
 				
 				<!-- 
 				..######.....###....########..########.................................................................................
@@ -125,7 +262,8 @@ bg-gray-100">
 				<div class=" 
 				h-[62vw] w-[40vw] 
 				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
 					
 					<!-- 
 					.####.########.########.##.....##....####.##.....##....###.....######...########................
@@ -147,6 +285,7 @@ bg-gray-100">
 
 						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
 						<div class="
+						product_img1
 						float-left
 						cursor-pointer
 						h-[36vw] w-[36vw] 
@@ -156,15 +295,17 @@ bg-gray-100">
  						rounded-[.2vw]
 						transition ease-in-out hover:scale-110  duration-300
 						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
+						">
 						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
 						<!-- border-dashed border-2 border-sky-500"> -->
 						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
 						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
 						</div>
+						
 					</div>
 
 					<!-- 
@@ -190,20 +331,19 @@ bg-gray-100">
 							<h2 class="
 							font-work_sans font-semibold text-gray-800 
 							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
 							mb-[1vw] mt-[1vw]
 							lg:mb-[.5vw] lg:mt-[.5vw]
 							transition ease-in-out duration-100
 							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
+				
 							">
 							Big Marble Design Tile
 							</h2>
 
 							<h2 class="
 							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[.5vw]
 							lg:mb-[.1vw]
@@ -213,7 +353,7 @@ bg-gray-100">
 							</h2>
 							<h2 class="
 							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[1vw]
 							lg:mb-[.5vw]
@@ -226,7 +366,7 @@ bg-gray-100">
 							<h2 class="
 							float-left
 							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
 							font-work_sans font-semibold text-fc_red ">
 							₱ 2,490.00
 							</h2>
@@ -255,7 +395,7 @@ bg-gray-100">
 					<div class="
 					float-left
 					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
+					lg:h-[3vw] lg:w-[17vw]
 					mx-[2vw] mb-[1vw]
 					lg:mx-[1vw] lg:mb-[1vw]
 					">
@@ -334,9 +474,247 @@ bg-gray-100">
 						Add to Cart
 						</button>
 
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
 
 
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
+
+
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img2
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Large Gray Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Matte
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 5703 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
 					</div>
 				</div>
 
@@ -365,7 +743,8 @@ bg-gray-100">
 				<div class=" 
 				h-[62vw] w-[40vw] 
 				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
 					
 					<!-- 
 					.####.########.########.##.....##....####.##.....##....###.....######...########................
@@ -387,6 +766,7 @@ bg-gray-100">
 
 						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
 						<div class="
+						product_img3
 						float-left
 						cursor-pointer
 						h-[36vw] w-[36vw] 
@@ -396,15 +776,17 @@ bg-gray-100">
  						rounded-[.2vw]
 						transition ease-in-out hover:scale-110  duration-300
 						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
+						">
 						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
 						<!-- border-dashed border-2 border-sky-500"> -->
 						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
 						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
 						</div>
+						
 					</div>
 
 					<!-- 
@@ -430,43 +812,42 @@ bg-gray-100">
 							<h2 class="
 							font-work_sans font-semibold text-gray-800 
 							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
 							mb-[1vw] mt-[1vw]
 							lg:mb-[.5vw] lg:mt-[.5vw]
 							transition ease-in-out duration-100
 							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
+				
 							">
-							Big Marble Design Tile
+							Large White Porcelain Tile
 							</h2>
 
 							<h2 class="
 							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[.5vw]
 							lg:mb-[.1vw]
 							">
 
-							Porcelain Glazed Glossy
+							Porcelain Glazed Polished
 							</h2>
 							<h2 class="
 							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[1vw]
 							lg:mb-[.5vw]
 							">
 
-							Tile Code: 7218 Size: 75x150cm
+							Tile Code: 7022 Size: 75x150cm
 							</h2>
 						</a>
 						<a href="">
 							<h2 class="
 							float-left
 							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
 							font-work_sans font-semibold text-fc_red ">
 							₱ 2,490.00
 							</h2>
@@ -495,7 +876,7 @@ bg-gray-100">
 					<div class="
 					float-left
 					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
+					lg:h-[3vw] lg:w-[17vw]
 					mx-[2vw] mb-[1vw]
 					lg:mx-[1vw] lg:mb-[1vw]
 					">
@@ -574,9 +955,486 @@ bg-gray-100">
 						Add to Cart
 						</button>
 
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
 
 
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img1
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Big Marble Design Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Glossy
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 7218 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+
+
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
+
+
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img2
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
+						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Large Gray Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Matte
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 5703 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
 					</div>
 				</div>
 
@@ -605,7 +1463,8 @@ bg-gray-100">
 				<div class=" 
 				h-[62vw] w-[40vw] 
 				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
 					
 					<!-- 
 					.####.########.########.##.....##....####.##.....##....###.....######...########................
@@ -627,6 +1486,7 @@ bg-gray-100">
 
 						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
 						<div class="
+						product_img3
 						float-left
 						cursor-pointer
 						h-[36vw] w-[36vw] 
@@ -636,15 +1496,17 @@ bg-gray-100">
  						rounded-[.2vw]
 						transition ease-in-out hover:scale-110  duration-300
 						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
+						">
 						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
 						<!-- border-dashed border-2 border-sky-500"> -->
 						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
 						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
 						</div>
+						
 					</div>
 
 					<!-- 
@@ -670,43 +1532,42 @@ bg-gray-100">
 							<h2 class="
 							font-work_sans font-semibold text-gray-800 
 							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
 							mb-[1vw] mt-[1vw]
 							lg:mb-[.5vw] lg:mt-[.5vw]
 							transition ease-in-out duration-100
 							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
+				
 							">
-							Big Marble Design Tile
+							Large White Porcelain Tile
 							</h2>
 
 							<h2 class="
 							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[.5vw]
 							lg:mb-[.1vw]
 							">
 
-							Porcelain Glazed Glossy
+							Porcelain Glazed Polished
 							</h2>
 							<h2 class="
 							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[1vw]
 							lg:mb-[.5vw]
 							">
 
-							Tile Code: 7218 Size: 75x150cm
+							Tile Code: 7022 Size: 75x150cm
 							</h2>
 						</a>
 						<a href="">
 							<h2 class="
 							float-left
 							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
 							font-work_sans font-semibold text-fc_red ">
 							₱ 2,490.00
 							</h2>
@@ -735,7 +1596,7 @@ bg-gray-100">
 					<div class="
 					float-left
 					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
+					lg:h-[3vw] lg:w-[17vw]
 					mx-[2vw] mb-[1vw]
 					lg:mx-[1vw] lg:mb-[1vw]
 					">
@@ -814,9 +1675,486 @@ bg-gray-100">
 						Add to Cart
 						</button>
 
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
 
 
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img1
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Big Marble Design Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Glossy
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 7218 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+
+
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
+
+
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img2
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
+						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Large Gray Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Matte
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 5703 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
 					</div>
 				</div>
 
@@ -845,7 +2183,8 @@ bg-gray-100">
 				<div class=" 
 				h-[62vw] w-[40vw] 
 				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
 					
 					<!-- 
 					.####.########.########.##.....##....####.##.....##....###.....######...########................
@@ -867,6 +2206,7 @@ bg-gray-100">
 
 						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
 						<div class="
+						product_img3
 						float-left
 						cursor-pointer
 						h-[36vw] w-[36vw] 
@@ -876,15 +2216,17 @@ bg-gray-100">
  						rounded-[.2vw]
 						transition ease-in-out hover:scale-110  duration-300
 						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
+						">
 						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
 						<!-- border-dashed border-2 border-sky-500"> -->
 						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
 						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
 						</div>
+						
 					</div>
 
 					<!-- 
@@ -910,43 +2252,42 @@ bg-gray-100">
 							<h2 class="
 							font-work_sans font-semibold text-gray-800 
 							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
 							mb-[1vw] mt-[1vw]
 							lg:mb-[.5vw] lg:mt-[.5vw]
 							transition ease-in-out duration-100
 							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
+				
 							">
-							Big Marble Design Tile
+							Large White Porcelain Tile
 							</h2>
 
 							<h2 class="
 							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[.5vw]
 							lg:mb-[.1vw]
 							">
 
-							Porcelain Glazed Glossy
+							Porcelain Glazed Polished
 							</h2>
 							<h2 class="
 							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[1vw]
 							lg:mb-[.5vw]
 							">
 
-							Tile Code: 7218 Size: 75x150cm
+							Tile Code: 7022 Size: 75x150cm
 							</h2>
 						</a>
 						<a href="">
 							<h2 class="
 							float-left
 							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
 							font-work_sans font-semibold text-fc_red ">
 							₱ 2,490.00
 							</h2>
@@ -975,7 +2316,7 @@ bg-gray-100">
 					<div class="
 					float-left
 					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
+					lg:h-[3vw] lg:w-[17vw]
 					mx-[2vw] mb-[1vw]
 					lg:mx-[1vw] lg:mb-[1vw]
 					">
@@ -1054,9 +2395,486 @@ bg-gray-100">
 						Add to Cart
 						</button>
 
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
 
 
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img1
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Big Marble Design Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Glossy
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 7218 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
+					</div>
+				</div>
+
+				<!-- 
+				..######.....###....########..########.....########.##....##.########.
+				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
+				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
+				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
+				.##.......#########.##...##...##.....##....##.......##..####.##.....##
+				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
+				..######..##.....##.##.....##.########.....########.##....##.########.
+				-->
+
+
+				<!-- 
+				..######.....###....########..########.................................................................................
+				.##....##...##.##...##.....##.##.....##................................................................................
+				.##........##...##..##.....##.##.....##................................................................................
+				.##.......##.....##.########..##.....##................................................................................
+				.##.......#########.##...##...##.....##................................................................................
+				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
+				 -->
+				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
+				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
+
+				<div class=" 
+				h-[62vw] w-[40vw] 
+				lg:w-[19vw] lg:h-[30vw]
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
+					
+					<!-- 
+					.####.########.########.##.....##....####.##.....##....###.....######...########................
+					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
+					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
+					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
+					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
+					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
+					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
+					 -->
+
+					<div class="
+					float-left
+					h-[40vw] w-[40vw] 
+					lg:h-[19vw] lg:w-[19vw] 
+					rounded-[.2vw]
+					">
+
+
+						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
+						<div class="
+						product_img2
+						float-left
+						cursor-pointer
+						h-[36vw] w-[36vw] 
+						lg:w-[17vw] lg:h-[17vw]
+						mt-[2vw] mr-[2vw] ml-[2vw]
+						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
+ 						rounded-[.2vw]
+						transition ease-in-out hover:scale-110  duration-300
+						bg-no-repeat bg-center bg-[100%] bg-contain
+						">
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- border-dashed border-2 border-sky-500"> -->
+						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
+						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
+						
+						</div>
+						
+					</div>
+
+					<!-- 
+					.####.########.########.##.....##....########..########..####..######..########
+					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
+					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
+					..##.....##....######...##.###.##....########..########...##..##.......######..
+					..##.....##....##.......##.....##....##........##...##....##..##.......##......
+					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
+					.####....##....########.##.....##....##........##.....##.####..######..########
+					 -->
+
+
+					<div class="
+					float-left
+					h-[15vw] w-[36vw]
+					lg:h-[6vw] lg:w-[17vw]
+					mx-[2vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					
+					">
+						<a href="#">
+							<h2 class="
+							font-work_sans font-semibold text-gray-800 
+							text-[2.5vw] leading-[2.5vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
+							mb-[1vw] mt-[1vw]
+							lg:mb-[.5vw] lg:mt-[.5vw]
+							transition ease-in-out duration-100
+							no-underline hover:underline 
+				
+							">
+							Large Gray Tile
+							</h2>
+
+							<h2 class="
+							text-[2.3vw] leading-[2.3vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[.5vw]
+							lg:mb-[.1vw]
+							">
+
+							Porcelain Glazed Matte
+							</h2>
+							<h2 class="
+							text-[2.1vw] leading-[2.1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
+							font-work_sans font-regular text-gray-600
+							mb-[1vw]
+							lg:mb-[.5vw]
+							">
+
+							Tile Code: 5703 Size: 75x150cm
+							</h2>
+						</a>
+						<a href="">
+							<h2 class="
+							float-left
+							text-[2.8vw] leading-[2.8vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
+							font-work_sans font-semibold text-fc_red ">
+							₱ 2,490.00
+							</h2>
+						</a>
+						<!-- <a href="">
+							<h2 class="
+							float-left
+							text-[2.5vw] leading-[2.5vw]
+							font-work_sans font-regular text-gray-400
+							line-through ml-[2vw]">
+							₱ 3,500.00
+							</h2>
+						</a>
+ 						-->
+					</div>
+					<!-- 
+					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
+					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
+					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
+					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
+					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
+					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
+					 -->
+
+					<div class="
+					float-left
+					h-[10vw] w-[36vw]
+					lg:h-[3vw] lg:w-[17vw]
+					mx-[2vw] mb-[1vw]
+					lg:mx-[1vw] lg:mb-[1vw]
+					">
+						<div class="
+						float-left
+						custom-number-input 
+						h-[5vw] w-[55%]
+						lg:h-[3vw] lg:w-[55%]
+						"> 
+						  <div class="
+						  flex flex-row 
+						  h-[5vw] w-full 
+						  lg:h-[3vw] lg:w-full 
+						  rounded-[2vw] relative 
+						  bg-transparent">
+
+							    <button data-action="decrement" 
+							    class=" 
+							    h-[5vw] w-[8vw]
+							    lg:h-[3vw] lg:w-[3vw]
+							    bg-gray-100 text-gray-600 
+							    hover:text-gray-700 hover:bg-gray-300 
+							    rounded-l cursor-pointer outline-none">
+
+							      <h3 class="
+							      h-[5vw]
+							      lg:h-[5vw] lg:w-[2vw]
+							      text-[5vw] leading-[4vw] 
+							      lg:text-[2vw] lg:leading-[2.5vw] 
+							      font-regular">−</h3>
+							    </button>
+
+							    <input type="number" 
+							    class="
+							    outline-none focus:outline-none 
+							    text-center
+							    w-full bg-gray-100
+							    text-[2.2vw] leading-[2.2vw]
+							    lg:text-[1.2vw] lg:leading-[1.2vw]
+							    font-work_sans font-semibold
+							    hover:text-black focus:text-black 
+							    cursor-default
+							    flex items-center text-gray-700
+							    outline-none"  value="0"></input>
+
+								<button data-action="increment" 
+								class="
+								h-[5vw] w-[8vw]
+								lg:h-[3vw] lg:w-[2vw]
+								bg-gray-100 text-gray-600 
+								hover:text-gray-700 hover:bg-gray-300 
+								rounded-r cursor-pointer">
+
+									<h3 class="
+									h-[5vw]
+									lg:h-[5vw] lg:w-[2vw]
+									text-[5vw] leading-[4vw] 
+									lg:text-[2vw] lg:leading-[2.5vw] 
+									font-regular">+</h3>
+								</button>
+							</div>
+						</div>
+
+
+						<button class="
+						float-right
+						w-[40%] h-[5vw]
+						lg:w-[40%] lg:h-[3vw]
+						bg-fc_red hover:bg-gray-600
+						font-work_sans font-semibold text-white 
+						text-[2vw] leading-[2.2vw] 
+						lg:text-[1vw] lg:leading-[1.2vw] 
+						rounded-[1vw]
+						lg:rounded-[.5vw]
+						"> 
+						Add to Cart
+						</button>
+
 					</div>
 				</div>
 
@@ -1085,7 +2903,8 @@ bg-gray-100">
 				<div class=" 
 				h-[62vw] w-[40vw] 
 				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
+				rounded-[1vw] lg:rounded-[.5vw] 
+				mx-auto bg-white">
 					
 					<!-- 
 					.####.########.########.##.....##....####.##.....##....###.....######...########................
@@ -1107,6 +2926,7 @@ bg-gray-100">
 
 						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
 						<div class="
+						product_img3
 						float-left
 						cursor-pointer
 						h-[36vw] w-[36vw] 
@@ -1116,15 +2936,17 @@ bg-gray-100">
  						rounded-[.2vw]
 						transition ease-in-out hover:scale-110  duration-300
 						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
+						">
 						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
 						<!-- border-dashed border-2 border-sky-500"> -->
 						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
 						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
+						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
+						<!-- bg-[url('/src/product/product_thumb1.png')] -->
+						<!-- bg-no-repeat bg-center bg-[100%] bg-contain -->
 						
 						</div>
+						
 					</div>
 
 					<!-- 
@@ -1150,43 +2972,42 @@ bg-gray-100">
 							<h2 class="
 							font-work_sans font-semibold text-gray-800 
 							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
+							lg:text-[1vw] lg:leading-[1.2vw] 
 							mb-[1vw] mt-[1vw]
 							lg:mb-[.5vw] lg:mt-[.5vw]
 							transition ease-in-out duration-100
 							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
+				
 							">
-							Big Marble Design Tile
+							Large White Porcelain Tile
 							</h2>
 
 							<h2 class="
 							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[.5vw]
 							lg:mb-[.1vw]
 							">
 
-							Porcelain Glazed Glossy
+							Porcelain Glazed Polished
 							</h2>
 							<h2 class="
 							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
+							lg:text-[.8vw] lg:leading-[1vw]
 							font-work_sans font-regular text-gray-600
 							mb-[1vw]
 							lg:mb-[.5vw]
 							">
 
-							Tile Code: 7218 Size: 75x150cm
+							Tile Code: 7022 Size: 75x150cm
 							</h2>
 						</a>
 						<a href="">
 							<h2 class="
 							float-left
 							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
+							lg:text-[1.3vw] lg:leading-[1.4vw]
 							font-work_sans font-semibold text-fc_red ">
 							₱ 2,490.00
 							</h2>
@@ -1215,7 +3036,7 @@ bg-gray-100">
 					<div class="
 					float-left
 					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
+					lg:h-[3vw] lg:w-[17vw]
 					mx-[2vw] mb-[1vw]
 					lg:mx-[1vw] lg:mb-[1vw]
 					">
@@ -1294,9 +3115,6 @@ bg-gray-100">
 						Add to Cart
 						</button>
 
-
-
-						
 					</div>
 				</div>
 
@@ -1309,967 +3127,6 @@ bg-gray-100">
 				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
 				..######..##.....##.##.....##.########.....########.##....##.########.
 				-->
-
-				<!-- 
-				..######.....###....########..########.................................................................................
-				.##....##...##.##...##.....##.##.....##................................................................................
-				.##........##...##..##.....##.##.....##................................................................................
-				.##.......##.....##.########..##.....##................................................................................
-				.##.......#########.##...##...##.....##................................................................................
-				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				 -->
-				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
-				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
-
-				<div class=" 
-				h-[62vw] w-[40vw] 
-				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
-					
-					<!-- 
-					.####.########.########.##.....##....####.##.....##....###.....######...########................
-					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
-					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
-					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
-					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
-					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
-					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
-					 -->
-
-					<div class="
-					float-left
-					h-[40vw] w-[40vw] 
-					lg:h-[19vw] lg:w-[19vw] 
-					rounded-[.2vw]
-					">
-
-
-						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
-						<div class="
-						float-left
-						cursor-pointer
-						h-[36vw] w-[36vw] 
-						lg:w-[17vw] lg:h-[17vw]
-						mt-[2vw] mr-[2vw] ml-[2vw]
-						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
- 						rounded-[.2vw]
-						transition ease-in-out hover:scale-110  duration-300
-						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
-						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
-						<!-- border-dashed border-2 border-sky-500"> -->
-						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
-						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
-						
-						</div>
-					</div>
-
-					<!-- 
-					.####.########.########.##.....##....########..########..####..######..########
-					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
-					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
-					..##.....##....######...##.###.##....########..########...##..##.......######..
-					..##.....##....##.......##.....##....##........##...##....##..##.......##......
-					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
-					.####....##....########.##.....##....##........##.....##.####..######..########
-					 -->
-
-
-					<div class="
-					float-left
-					h-[15vw] w-[36vw]
-					lg:h-[6vw] lg:w-[17vw]
-					mx-[2vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					
-					">
-						<a href="#">
-							<h2 class="
-							font-work_sans font-semibold text-gray-800 
-							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
-							mb-[1vw] mt-[1vw]
-							lg:mb-[.5vw] lg:mt-[.5vw]
-							transition ease-in-out duration-100
-							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
-							">
-							Big Marble Design Tile
-							</h2>
-
-							<h2 class="
-							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[.5vw]
-							lg:mb-[.1vw]
-							">
-
-							Porcelain Glazed Glossy
-							</h2>
-							<h2 class="
-							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[1vw]
-							lg:mb-[.5vw]
-							">
-
-							Tile Code: 7218 Size: 75x150cm
-							</h2>
-						</a>
-						<a href="">
-							<h2 class="
-							float-left
-							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
-							font-work_sans font-semibold text-fc_red ">
-							₱ 2,490.00
-							</h2>
-						</a>
-						<!-- <a href="">
-							<h2 class="
-							float-left
-							text-[2.5vw] leading-[2.5vw]
-							font-work_sans font-regular text-gray-400
-							line-through ml-[2vw]">
-							₱ 3,500.00
-							</h2>
-						</a>
- 						-->
-					</div>
-					<!-- 
-					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
-					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
-					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
-					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
-					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
-					 -->
-
-					<div class="
-					float-left
-					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
-					mx-[2vw] mb-[1vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					">
-						<div class="
-						float-left
-						custom-number-input 
-						h-[5vw] w-[55%]
-						lg:h-[3vw] lg:w-[55%]
-						"> 
-						  <div class="
-						  flex flex-row 
-						  h-[5vw] w-full 
-						  lg:h-[3vw] lg:w-full 
-						  rounded-[2vw] relative 
-						  bg-transparent">
-
-							    <button data-action="decrement" 
-							    class=" 
-							    h-[5vw] w-[8vw]
-							    lg:h-[3vw] lg:w-[3vw]
-							    bg-gray-100 text-gray-600 
-							    hover:text-gray-700 hover:bg-gray-300 
-							    rounded-l cursor-pointer outline-none">
-
-							      <h3 class="
-							      h-[5vw]
-							      lg:h-[5vw] lg:w-[2vw]
-							      text-[5vw] leading-[4vw] 
-							      lg:text-[2vw] lg:leading-[2.5vw] 
-							      font-regular">−</h3>
-							    </button>
-
-							    <input type="number" 
-							    class="
-							    outline-none focus:outline-none 
-							    text-center
-							    w-full bg-gray-100
-							    text-[2.2vw] leading-[2.2vw]
-							    lg:text-[1.2vw] lg:leading-[1.2vw]
-							    font-work_sans font-semibold
-							    hover:text-black focus:text-black 
-							    cursor-default
-							    flex items-center text-gray-700
-							    outline-none"  value="0"></input>
-
-								<button data-action="increment" 
-								class="
-								h-[5vw] w-[8vw]
-								lg:h-[3vw] lg:w-[2vw]
-								bg-gray-100 text-gray-600 
-								hover:text-gray-700 hover:bg-gray-300 
-								rounded-r cursor-pointer">
-
-									<h3 class="
-									h-[5vw]
-									lg:h-[5vw] lg:w-[2vw]
-									text-[5vw] leading-[4vw] 
-									lg:text-[2vw] lg:leading-[2.5vw] 
-									font-regular">+</h3>
-								</button>
-							</div>
-						</div>
-
-
-						<button class="
-						float-right
-						w-[40%] h-[5vw]
-						lg:w-[40%] lg:h-[3vw]
-						bg-fc_red hover:bg-gray-600
-						font-work_sans font-semibold text-white 
-						text-[2vw] leading-[2.2vw] 
-						lg:text-[1vw] lg:leading-[1.2vw] 
-						rounded-[1vw]
-						lg:rounded-[.5vw]
-						"> 
-						Add to Cart
-						</button>
-
-
-
-						
-					</div>
-				</div>
-
-				<!-- 
-				..######.....###....########..########.....########.##....##.########.
-				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
-				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
-				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
-				.##.......#########.##...##...##.....##....##.......##..####.##.....##
-				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
-				..######..##.....##.##.....##.########.....########.##....##.########.
-				-->
-
-				<!-- 
-				..######.....###....########..########.................................................................................
-				.##....##...##.##...##.....##.##.....##................................................................................
-				.##........##...##..##.....##.##.....##................................................................................
-				.##.......##.....##.########..##.....##................................................................................
-				.##.......#########.##...##...##.....##................................................................................
-				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				 -->
-				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
-				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
-
-				<div class=" 
-				h-[62vw] w-[40vw] 
-				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
-					
-					<!-- 
-					.####.########.########.##.....##....####.##.....##....###.....######...########................
-					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
-					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
-					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
-					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
-					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
-					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
-					 -->
-
-					<div class="
-					float-left
-					h-[40vw] w-[40vw] 
-					lg:h-[19vw] lg:w-[19vw] 
-					rounded-[.2vw]
-					">
-
-
-						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
-						<div class="
-						float-left
-						cursor-pointer
-						h-[36vw] w-[36vw] 
-						lg:w-[17vw] lg:h-[17vw]
-						mt-[2vw] mr-[2vw] ml-[2vw]
-						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
- 						rounded-[.2vw]
-						transition ease-in-out hover:scale-110  duration-300
-						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
-						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
-						<!-- border-dashed border-2 border-sky-500"> -->
-						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
-						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
-						
-						</div>
-					</div>
-
-					<!-- 
-					.####.########.########.##.....##....########..########..####..######..########
-					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
-					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
-					..##.....##....######...##.###.##....########..########...##..##.......######..
-					..##.....##....##.......##.....##....##........##...##....##..##.......##......
-					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
-					.####....##....########.##.....##....##........##.....##.####..######..########
-					 -->
-
-
-					<div class="
-					float-left
-					h-[15vw] w-[36vw]
-					lg:h-[6vw] lg:w-[17vw]
-					mx-[2vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					
-					">
-						<a href="#">
-							<h2 class="
-							font-work_sans font-semibold text-gray-800 
-							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
-							mb-[1vw] mt-[1vw]
-							lg:mb-[.5vw] lg:mt-[.5vw]
-							transition ease-in-out duration-100
-							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
-							">
-							Big Marble Design Tile
-							</h2>
-
-							<h2 class="
-							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[.5vw]
-							lg:mb-[.1vw]
-							">
-
-							Porcelain Glazed Glossy
-							</h2>
-							<h2 class="
-							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[1vw]
-							lg:mb-[.5vw]
-							">
-
-							Tile Code: 7218 Size: 75x150cm
-							</h2>
-						</a>
-						<a href="">
-							<h2 class="
-							float-left
-							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
-							font-work_sans font-semibold text-fc_red ">
-							₱ 2,490.00
-							</h2>
-						</a>
-						<!-- <a href="">
-							<h2 class="
-							float-left
-							text-[2.5vw] leading-[2.5vw]
-							font-work_sans font-regular text-gray-400
-							line-through ml-[2vw]">
-							₱ 3,500.00
-							</h2>
-						</a>
- 						-->
-					</div>
-					<!-- 
-					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
-					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
-					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
-					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
-					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
-					 -->
-
-					<div class="
-					float-left
-					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
-					mx-[2vw] mb-[1vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					">
-						<div class="
-						float-left
-						custom-number-input 
-						h-[5vw] w-[55%]
-						lg:h-[3vw] lg:w-[55%]
-						"> 
-						  <div class="
-						  flex flex-row 
-						  h-[5vw] w-full 
-						  lg:h-[3vw] lg:w-full 
-						  rounded-[2vw] relative 
-						  bg-transparent">
-
-							    <button data-action="decrement" 
-							    class=" 
-							    h-[5vw] w-[8vw]
-							    lg:h-[3vw] lg:w-[3vw]
-							    bg-gray-100 text-gray-600 
-							    hover:text-gray-700 hover:bg-gray-300 
-							    rounded-l cursor-pointer outline-none">
-
-							      <h3 class="
-							      h-[5vw]
-							      lg:h-[5vw] lg:w-[2vw]
-							      text-[5vw] leading-[4vw] 
-							      lg:text-[2vw] lg:leading-[2.5vw] 
-							      font-regular">−</h3>
-							    </button>
-
-							    <input type="number" 
-							    class="
-							    outline-none focus:outline-none 
-							    text-center
-							    w-full bg-gray-100
-							    text-[2.2vw] leading-[2.2vw]
-							    lg:text-[1.2vw] lg:leading-[1.2vw]
-							    font-work_sans font-semibold
-							    hover:text-black focus:text-black 
-							    cursor-default
-							    flex items-center text-gray-700
-							    outline-none"  value="0"></input>
-
-								<button data-action="increment" 
-								class="
-								h-[5vw] w-[8vw]
-								lg:h-[3vw] lg:w-[2vw]
-								bg-gray-100 text-gray-600 
-								hover:text-gray-700 hover:bg-gray-300 
-								rounded-r cursor-pointer">
-
-									<h3 class="
-									h-[5vw]
-									lg:h-[5vw] lg:w-[2vw]
-									text-[5vw] leading-[4vw] 
-									lg:text-[2vw] lg:leading-[2.5vw] 
-									font-regular">+</h3>
-								</button>
-							</div>
-						</div>
-
-
-						<button class="
-						float-right
-						w-[40%] h-[5vw]
-						lg:w-[40%] lg:h-[3vw]
-						bg-fc_red hover:bg-gray-600
-						font-work_sans font-semibold text-white 
-						text-[2vw] leading-[2.2vw] 
-						lg:text-[1vw] lg:leading-[1.2vw] 
-						rounded-[1vw]
-						lg:rounded-[.5vw]
-						"> 
-						Add to Cart
-						</button>
-
-
-
-						
-					</div>
-				</div>
-
-				<!-- 
-				..######.....###....########..########.....########.##....##.########.
-				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
-				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
-				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
-				.##.......#########.##...##...##.....##....##.......##..####.##.....##
-				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
-				..######..##.....##.##.....##.########.....########.##....##.########.
-				-->
-
-				<!-- 
-				..######.....###....########..########.................................................................................
-				.##....##...##.##...##.....##.##.....##................................................................................
-				.##........##...##..##.....##.##.....##................................................................................
-				.##.......##.....##.########..##.....##................................................................................
-				.##.......#########.##...##...##.....##................................................................................
-				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				 -->
-				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
-				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
-
-				<div class=" 
-				h-[62vw] w-[40vw] 
-				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
-					
-					<!-- 
-					.####.########.########.##.....##....####.##.....##....###.....######...########................
-					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
-					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
-					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
-					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
-					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
-					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
-					 -->
-
-					<div class="
-					float-left
-					h-[40vw] w-[40vw] 
-					lg:h-[19vw] lg:w-[19vw] 
-					rounded-[.2vw]
-					">
-
-
-						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
-						<div class="
-						float-left
-						cursor-pointer
-						h-[36vw] w-[36vw] 
-						lg:w-[17vw] lg:h-[17vw]
-						mt-[2vw] mr-[2vw] ml-[2vw]
-						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
- 						rounded-[.2vw]
-						transition ease-in-out hover:scale-110  duration-300
-						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
-						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
-						<!-- border-dashed border-2 border-sky-500"> -->
-						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
-						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
-						
-						</div>
-					</div>
-
-					<!-- 
-					.####.########.########.##.....##....########..########..####..######..########
-					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
-					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
-					..##.....##....######...##.###.##....########..########...##..##.......######..
-					..##.....##....##.......##.....##....##........##...##....##..##.......##......
-					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
-					.####....##....########.##.....##....##........##.....##.####..######..########
-					 -->
-
-
-					<div class="
-					float-left
-					h-[15vw] w-[36vw]
-					lg:h-[6vw] lg:w-[17vw]
-					mx-[2vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					
-					">
-						<a href="#">
-							<h2 class="
-							font-work_sans font-semibold text-gray-800 
-							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
-							mb-[1vw] mt-[1vw]
-							lg:mb-[.5vw] lg:mt-[.5vw]
-							transition ease-in-out duration-100
-							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
-							">
-							Big Marble Design Tile
-							</h2>
-
-							<h2 class="
-							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[.5vw]
-							lg:mb-[.1vw]
-							">
-
-							Porcelain Glazed Glossy
-							</h2>
-							<h2 class="
-							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[1vw]
-							lg:mb-[.5vw]
-							">
-
-							Tile Code: 7218 Size: 75x150cm
-							</h2>
-						</a>
-						<a href="">
-							<h2 class="
-							float-left
-							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
-							font-work_sans font-semibold text-fc_red ">
-							₱ 2,490.00
-							</h2>
-						</a>
-						<!-- <a href="">
-							<h2 class="
-							float-left
-							text-[2.5vw] leading-[2.5vw]
-							font-work_sans font-regular text-gray-400
-							line-through ml-[2vw]">
-							₱ 3,500.00
-							</h2>
-						</a>
- 						-->
-					</div>
-					<!-- 
-					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
-					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
-					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
-					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
-					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
-					 -->
-
-					<div class="
-					float-left
-					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
-					mx-[2vw] mb-[1vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					">
-						<div class="
-						float-left
-						custom-number-input 
-						h-[5vw] w-[55%]
-						lg:h-[3vw] lg:w-[55%]
-						"> 
-						  <div class="
-						  flex flex-row 
-						  h-[5vw] w-full 
-						  lg:h-[3vw] lg:w-full 
-						  rounded-[2vw] relative 
-						  bg-transparent">
-
-							    <button data-action="decrement" 
-							    class=" 
-							    h-[5vw] w-[8vw]
-							    lg:h-[3vw] lg:w-[3vw]
-							    bg-gray-100 text-gray-600 
-							    hover:text-gray-700 hover:bg-gray-300 
-							    rounded-l cursor-pointer outline-none">
-
-							      <h3 class="
-							      h-[5vw]
-							      lg:h-[5vw] lg:w-[2vw]
-							      text-[5vw] leading-[4vw] 
-							      lg:text-[2vw] lg:leading-[2.5vw] 
-							      font-regular">−</h3>
-							    </button>
-
-							    <input type="number" 
-							    class="
-							    outline-none focus:outline-none 
-							    text-center
-							    w-full bg-gray-100
-							    text-[2.2vw] leading-[2.2vw]
-							    lg:text-[1.2vw] lg:leading-[1.2vw]
-							    font-work_sans font-semibold
-							    hover:text-black focus:text-black 
-							    cursor-default
-							    flex items-center text-gray-700
-							    outline-none"  value="0"></input>
-
-								<button data-action="increment" 
-								class="
-								h-[5vw] w-[8vw]
-								lg:h-[3vw] lg:w-[2vw]
-								bg-gray-100 text-gray-600 
-								hover:text-gray-700 hover:bg-gray-300 
-								rounded-r cursor-pointer">
-
-									<h3 class="
-									h-[5vw]
-									lg:h-[5vw] lg:w-[2vw]
-									text-[5vw] leading-[4vw] 
-									lg:text-[2vw] lg:leading-[2.5vw] 
-									font-regular">+</h3>
-								</button>
-							</div>
-						</div>
-
-
-						<button class="
-						float-right
-						w-[40%] h-[5vw]
-						lg:w-[40%] lg:h-[3vw]
-						bg-fc_red hover:bg-gray-600
-						font-work_sans font-semibold text-white 
-						text-[2vw] leading-[2.2vw] 
-						lg:text-[1vw] lg:leading-[1.2vw] 
-						rounded-[1vw]
-						lg:rounded-[.5vw]
-						"> 
-						Add to Cart
-						</button>
-
-
-
-						
-					</div>
-				</div>
-
-				<!-- 
-				..######.....###....########..########.....########.##....##.########.
-				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
-				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
-				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
-				.##.......#########.##...##...##.....##....##.......##..####.##.....##
-				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
-				..######..##.....##.##.....##.########.....########.##....##.########.
-				-->
-
-				<!-- 
-				..######.....###....########..########.................................................................................
-				.##....##...##.##...##.....##.##.....##................................................................................
-				.##........##...##..##.....##.##.....##................................................................................
-				.##.......##.....##.########..##.....##................................................................................
-				.##.......#########.##...##...##.....##................................................................................
-				.##....##.##.....##.##....##..##.....##.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				..######..##.....##.##.....##.########..###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###.###
-				 -->
-				<!-- <div class=" h-[70vw] w-[45vw] lg:w-[19vw] lg:h-[30vw] bg-green-500/10"> -->
-				<!-- style="box-shadow: 1px 6px 14px 3px rgba(0, 0, 0, 0.25);"> -->
-
-				<div class=" 
-				h-[62vw] w-[40vw] 
-				lg:w-[19vw] lg:h-[30vw]
-				rounded-[1vw] mx-auto bg-white">
-					
-					<!-- 
-					.####.########.########.##.....##....####.##.....##....###.....######...########................
-					..##.....##....##.......###...###.....##..###...###...##.##...##....##..##......................
-					..##.....##....##.......####.####.....##..####.####..##...##..##........##......................
-					..##.....##....######...##.###.##.....##..##.###.##.##.....##.##...####.######..................
-					..##.....##....##.......##.....##.....##..##.....##.#########.##....##..##......................
-					..##.....##....##.......##.....##.....##..##.....##.##.....##.##....##..##.......###.###.###.###
-					.####....##....########.##.....##....####.##.....##.##.....##..######...########.###.###.###.###
-					 -->
-
-					<div class="
-					float-left
-					h-[40vw] w-[40vw] 
-					lg:h-[19vw] lg:w-[19vw] 
-					rounded-[.2vw]
-					">
-
-
-						<!-- <div style="background: url('../src/product/product_thumb1.png') center/90% no-repeat;" -->
-						<div class="
-						float-left
-						cursor-pointer
-						h-[36vw] w-[36vw] 
-						lg:w-[17vw] lg:h-[17vw]
-						mt-[2vw] mr-[2vw] ml-[2vw]
-						lg:mt-[1vw] lg:mr-[1vw] lg:ml-[1vw]
- 						rounded-[.2vw]
-						transition ease-in-out hover:scale-110  duration-300
-						bg-no-repeat bg-center bg-[100%] bg-contain
-						bg-[url('/src/product/product_thumb1.png')]
-						hover:bg-[url('/src/product/product_thumb_hover1.png')]"
-						>
-						<!-- hover:bg-[url('/src/product/product_thumb_hover1.png')] -->
-						<!-- border-dashed border-2 border-sky-500"> -->
-						<!-- transition ease-in-out hover:scale-110 -translate-y-[-1vw] duration-300 -->
-						<!-- mt-[1vw] mr-[2vw] ml-[2vw] mb-[2vw] -->
-						
-						</div>
-					</div>
-
-					<!-- 
-					.####.########.########.##.....##....########..########..####..######..########
-					..##.....##....##.......###...###....##.....##.##.....##..##..##....##.##......
-					..##.....##....##.......####.####....##.....##.##.....##..##..##.......##......
-					..##.....##....######...##.###.##....########..########...##..##.......######..
-					..##.....##....##.......##.....##....##........##...##....##..##.......##......
-					..##.....##....##.......##.....##....##........##....##...##..##....##.##......
-					.####....##....########.##.....##....##........##.....##.####..######..########
-					 -->
-
-
-					<div class="
-					float-left
-					h-[15vw] w-[36vw]
-					lg:h-[6vw] lg:w-[17vw]
-					mx-[2vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					
-					">
-						<a href="#">
-							<h2 class="
-							font-work_sans font-semibold text-gray-800 
-							text-[2.5vw] leading-[2.5vw] 
-							lg:text-[1.3vw] lg:leading-[1.3vw] 
-							mb-[1vw] mt-[1vw]
-							lg:mb-[.5vw] lg:mt-[.5vw]
-							transition ease-in-out duration-100
-							no-underline hover:underline 
-							hover:text-[2.5vw]  
-							hover:lg:text-[1.3vw]  
-							">
-							Big Marble Design Tile
-							</h2>
-
-							<h2 class="
-							text-[2.3vw] leading-[2.3vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[.5vw]
-							lg:mb-[.1vw]
-							">
-
-							Porcelain Glazed Glossy
-							</h2>
-							<h2 class="
-							text-[2.1vw] leading-[2.1vw]
-							lg:text-[1vw] lg:leading-[1vw]
-							font-work_sans font-regular text-gray-600
-							mb-[1vw]
-							lg:mb-[.5vw]
-							">
-
-							Tile Code: 7218 Size: 75x150cm
-							</h2>
-						</a>
-						<a href="">
-							<h2 class="
-							float-left
-							text-[2.8vw] leading-[2.8vw]
-							lg:text-[1.5vw] lg:leading-[1.5vw]
-							font-work_sans font-semibold text-fc_red ">
-							₱ 2,490.00
-							</h2>
-						</a>
-						<!-- <a href="">
-							<h2 class="
-							float-left
-							text-[2.5vw] leading-[2.5vw]
-							font-work_sans font-regular text-gray-400
-							line-through ml-[2vw]">
-							₱ 3,500.00
-							</h2>
-						</a>
- 						-->
-					</div>
-					<!-- 
-					.####.########.########.##.....##....########..##.....##.########.########..#######..##....##
-					..##.....##....##.......###...###....##.....##.##.....##....##.......##....##.....##.###...##
-					..##.....##....##.......####.####....##.....##.##.....##....##.......##....##.....##.####..##
-					..##.....##....######...##.###.##....########..##.....##....##.......##....##.....##.##.##.##
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##..####
-					..##.....##....##.......##.....##....##.....##.##.....##....##.......##....##.....##.##...###
-					.####....##....########.##.....##....########...#######.....##.......##.....#######..##....##
-					 -->
-
-					<div class="
-					float-left
-					h-[10vw] w-[36vw]
-					lg:h-[5vw] lg:w-[17vw]
-					mx-[2vw] mb-[1vw]
-					lg:mx-[1vw] lg:mb-[1vw]
-					">
-						<div class="
-						float-left
-						custom-number-input 
-						h-[5vw] w-[55%]
-						lg:h-[3vw] lg:w-[55%]
-						"> 
-						  <div class="
-						  flex flex-row 
-						  h-[5vw] w-full 
-						  lg:h-[3vw] lg:w-full 
-						  rounded-[2vw] relative 
-						  bg-transparent">
-
-							    <button data-action="decrement" 
-							    class=" 
-							    h-[5vw] w-[8vw]
-							    lg:h-[3vw] lg:w-[3vw]
-							    bg-gray-100 text-gray-600 
-							    hover:text-gray-700 hover:bg-gray-300 
-							    rounded-l cursor-pointer outline-none">
-
-							      <h3 class="
-							      h-[5vw]
-							      lg:h-[5vw] lg:w-[2vw]
-							      text-[5vw] leading-[4vw] 
-							      lg:text-[2vw] lg:leading-[2.5vw] 
-							      font-regular">−</h3>
-							    </button>
-
-							    <input type="number" 
-							    class="
-							    outline-none focus:outline-none 
-							    text-center
-							    w-full bg-gray-100
-							    text-[2.2vw] leading-[2.2vw]
-							    lg:text-[1.2vw] lg:leading-[1.2vw]
-							    font-work_sans font-semibold
-							    hover:text-black focus:text-black 
-							    cursor-default
-							    flex items-center text-gray-700
-							    outline-none"  value="0"></input>
-
-								<button data-action="increment" 
-								class="
-								h-[5vw] w-[8vw]
-								lg:h-[3vw] lg:w-[2vw]
-								bg-gray-100 text-gray-600 
-								hover:text-gray-700 hover:bg-gray-300 
-								rounded-r cursor-pointer">
-
-									<h3 class="
-									h-[5vw]
-									lg:h-[5vw] lg:w-[2vw]
-									text-[5vw] leading-[4vw] 
-									lg:text-[2vw] lg:leading-[2.5vw] 
-									font-regular">+</h3>
-								</button>
-							</div>
-						</div>
-
-
-						<button class="
-						float-right
-						w-[40%] h-[5vw]
-						lg:w-[40%] lg:h-[3vw]
-						bg-fc_red hover:bg-gray-600
-						font-work_sans font-semibold text-white 
-						text-[2vw] leading-[2.2vw] 
-						lg:text-[1vw] lg:leading-[1.2vw] 
-						rounded-[1vw]
-						lg:rounded-[.5vw]
-						"> 
-						Add to Cart
-						</button>
-
-
-
-						
-					</div>
-				</div>
-
-				<!-- 
-				..######.....###....########..########.....########.##....##.########.
-				.##....##...##.##...##.....##.##.....##....##.......###...##.##.....##
-				.##........##...##..##.....##.##.....##....##.......####..##.##.....##
-				.##.......##.....##.########..##.....##....######...##.##.##.##.....##
-				.##.......#########.##...##...##.....##....##.......##..####.##.....##
-				.##....##.##.....##.##....##..##.....##....##.......##...###.##.....##
-				..######..##.....##.##.....##.########.....########.##....##.########.
-				-->
-
 			</div>
 		
 		</div>
